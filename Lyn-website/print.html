@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		
+        <title>Lyn Harris</title>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="TheLynConcept | Lyn Harris" />
+        <meta name="keywords" content="images, logos, portfolio, graphic design, illustration, photography, black artist, black photographer, poster, design" />
+        <meta name="author" content="Codrops" />
+		<meta http-equiv="content-language" content="en">
+		
+		<!--favicon-->				
+		<link rel="icon" type="image/png" href="img/design/logo/lhhblack.png" />
+		
+		<!--insert external style sheet--> 		
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<script type="text/javascript" src="http://www.queness.com/js/bsa.js?t=123322"></script>
+		
+		<style>
+
+		.container {
+
+		}
+
+		/* ==========================================================================
+			Basic Styles
+		========================================================================== */
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: relative;
+			background-color: none;
+			font-size: 9px;
+			height: 15px;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+
+		nav {
+			height: 40px;
+			width: 100%;
+			background: none;
+			font-size: 10px;
+			position: relative;
+			top: 10px;
+			float: left;
+			text-transform: uppercase;
+			font-family: 'Raleway',sans-serif;
+			letter-spacing: 2px;
+			color: #fff;
+			z-index: 9999;
+			text-align: left;
+			margin-bottom: 7%;
+		}
+
+		nav a:hover {
+				background:#bad433;
+				color: #fff;
+			} 
+
+		nav ul {
+			padding: 0;
+			margin: 10px;
+		}
+
+		nav p {
+			color: #fff;
+			display: inline-block;
+			text-align: left;
+			text-decoration: none;
+		}
+
+		nav li {
+			display: inline;
+			float: left;
+			padding-right: 50px;
+		}
+
+		nav a {
+			color: #fff;
+			display: inline-block;
+			text-align: right;
+			text-decoration: none;
+			padding:10px 20px;
+		}
+
+		nav a#pull {
+			display: none;
+		}
+
+		p.active{
+			font-weight: bold;
+			color: #bad433;
+			letter-spacing: 15px;
+		}
+
+
+
+		/* ==========================================================================
+		Responsive
+		========================================================================== */
+
+
+
+		@media screen and (max-width: 1500px) {
+
+			nav {
+				width: 100%;
+				height: auto;
+				border-bottom: 0;
+			}
+			nav ul {
+				display: none;
+				height: auto;
+			}
+			
+			nav li {
+				width: 100%;
+				float: left;
+				position: relative;
+			}
+			
+			
+			nav a {
+				text-align: left;
+				width: 100%;
+				background: #222;		  	
+			}
+			
+			nav p {
+				text-align: left;
+				width: 100%;
+				margin: 20px;
+			}
+			
+			nav a:hover {
+				background:#bad433;
+				color: #fff;
+			}  	
+			
+			nav a#pull {
+				display: block;
+				background: none;
+				width: 100%;
+				position: relative;
+				font-size:20px;
+				color: #bad433;
+			}
+			nav a#pull:after {
+				content:"";
+				background: none;
+				width: 30px;
+				height: 30px;
+				color: #FFF;
+				display: inline-block;
+				position: absolute;
+				right: 15px;
+				top: 10px;
+			}
+			nav a.active{
+			font-weight: bold;
+			color: #bad433;
+			letter-spacing: 4px;
+			}
+
+			
+		}
+		</style>
+
+		<!-- Responsive Nav -->
+		<script src="js/jquery.1.7.1.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+						menu 		= $('nav ul');
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				
+				$(window).resize(function(){
+					var w = $(this).width();
+
+					if(w > 800 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+				});
+
+				$('li').on('click', function(e) {				
+					var w = $(window).width();
+					if(w < 800 ) {
+						menu.slideToggle();
+					}
+				});
+
+				$('.panel').height($(window).height());
+				
+			});
+		</script>
+	</head>
+
+
+<body>
+
+<nav class="clearfix">
+    <ul class="clearfix">
+        
+        <li><a href="http://www.thelynconcept.com/enter"><font color="bad433">&Xi;&ensp;</font color>Home</a></li>
+		
+		<li class="dropdown"><p class="active"><font color="bad433">&Xi;&ensp;</font color>Design</p>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/logos">Logos</a></ul>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/print">Print</a></ul>
+		</li>
+		
+				
+		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Photography</p>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/humans">Humans</a></ul>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/objects">Objects</a></ul>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/insandouts">Ins & Outs</a></ul>
+		</li>
+		
+		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Illustration</p>
+			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/illustration">Comics & Shoes</a></ul>
+		</li>
+
+		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Social Media</p>
+			<ul class="dropdown-content"><a href="https://www.instagram.com/thelynconcept/" target="_blank">Instagram</a></ul>
+			<ul class="dropdown-content"><a href="http://thelynconcept.tumblr.com/" target="_blank">Tumblr</a></ul>
+			<ul class="dropdown-content"><a href="https://www.pinterest.com/thelynconcept/" target="_blank">Pinterest</a></ul>
+			<ul class="dropdown-content"><a href="mailto:lyn.harrish@gmail.com">Lyn.Harrish@gmail.com </a></ul>
+		</li>
+
+    </ul>
+    <a href="#" id="pull"><font color="ffffff">&Xi;&ensp;</font color>Menu</a>
+</nav>
+
+
+<div class="absolute"> <img class="absolute" src="img/design/logo/lhhwhite.png"/> </div>
+<div class="footer"> <p class="footer">©<br>Lyn<br>Harris<br>2016</p> </div>
+		
+		<div align="center">
+					
+			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
+						
+			<script type="text/javascript">
+			$(function($){
+				var addToAll = false;
+				var gallery = true;
+				var titlePosition = 'inside';
+				$(addToAll ? 'img' : 'img.fancybox').each(function(){
+					var $this = $(this);
+					var title = $this.attr('title');
+					var src = $this.attr('data-big') || $this.attr('src');
+					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+					$this.wrap(a);
+				});
+				if (gallery)
+					$('a.fancybox').attr('rel', 'fancyboxgallery');
+				$('a.fancybox').fancybox({
+					titlePosition: titlePosition
+				});
+			});
+			$.noConflict();
+			</script>
+			
+			
+			<div class="thumbnail2">
+				<a href="https://issuu.com/ouzimag/docs/ouzi_issue_1_2017"target="_blank"> <img "fancybox" src="img/design/print/tag3.jpg"> </a>
+			</div>
+			
+			<div class="thumbnail2">
+				<a href="https://issuu.com/thelynconcept/docs/juice"target="_blank"> <img "fancybox" src="img/design/print/tag.jpg"> </a>
+			</div>
+			
+			<div class="thumbnail2">
+				<a href="https://issuu.com/thelynconcept/docs/coffee_and_conversations"target="_blank"> <img "fancybox" src="img/design/print/tag2.jpg"> </a>
+			</div>
+
+			
+						
+			<div class="thumbnail">
+				<img src="img/design/print/fhync1.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail2">
+				<img src="img/design/print/fhync2.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail2">
+				<img src="img/design/print/fhync3.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail2">
+				<img src="img/design/print/fhync4.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail">
+				<img src="img/design/print/fhync5.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail">
+				<img src="img/design/print/fhync6.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail">
+				<img src="img/design/print/fhync7.jpg" class="fancybox"alt="Image" />
+			</div>
+			<div class="thumbnail">
+				<img src="img/design/print/fhync8.jpg" class="fancybox"alt="Image" />
+			</div>
+			
+
+			
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/tough.jpg" class="fancybox"alt="Tough" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/olive.jpg" class="fancybox"alt="Olive" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/rhinoceros.jpg" class="fancybox"alt="Rhinoceros" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/history.jpg" class="fancybox"alt="History" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/hypersexual.jpg" class="fancybox"alt="Hypersexual" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/offer.jpg" class="fancybox"alt="Offer" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/beauty.jpg" class="fancybox"alt="Beauty" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/hair.jpg" class="fancybox"alt="Hair" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/stereotypes.jpg" class="fancybox"alt="Stereotypes" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/youth.jpg" class="fancybox"alt="Youth" />
+			</div>
+
+			
+			
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/x-magazine.jpg" class="fancybox"alt="X Magazine Cover" />
+			</div>
+			
+			
+			
+		</div>
+	</body>
+</html>
