@@ -22,6 +22,9 @@
 		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<script type="text/javascript" src="http://www.queness.com/js/bsa.js?t=123322"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
 		
 
 		<!-- Responsive Nav -->
@@ -54,6 +57,27 @@
 				$('.panel').height($(window).height());
 				
 			});
+		</script>
+			<!-- FANCYBOX IMAGES -->
+		<script type="text/javascript">
+			$(function($){
+				var addToAll = false;
+				var gallery = true;
+				var titlePosition = 'inside';
+				$(addToAll ? 'img' : 'img.fancybox').each(function(){
+					var $this = $(this);
+					var title = $this.attr('title');
+					var src = $this.attr('data-big') || $this.attr('src');
+					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+					$this.wrap(a);
+				});
+				if (gallery)
+					$('a.fancybox').attr('rel', 'fancyboxgallery');
+				$('a.fancybox').fancybox({
+					titlePosition: titlePosition
+				});
+			});
+			$.noConflict();
 		</script>
 	</head>
 
@@ -97,200 +121,175 @@
 		
 		<div align="center">
 					
-			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
-			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
-			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
-						
-			<script type="text/javascript">
-			$(function($){
-				var addToAll = false;
-				var gallery = true;
-				var titlePosition = 'inside';
-				$(addToAll ? 'img' : 'img.fancybox').each(function(){
-					var $this = $(this);
-					var title = $this.attr('title');
-					var src = $this.attr('data-big') || $this.attr('src');
-					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-					$this.wrap(a);
-				});
-				if (gallery)
-					$('a.fancybox').attr('rel', 'fancyboxgallery');
-				$('a.fancybox').fancybox({
-					titlePosition: titlePosition
-				});
-			});
-			$.noConflict();
-			</script>
-
 			<div class="thumbnail2">
-				<img src="img/photography/objects/chair.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/chair.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/cuba.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/cuba.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/wagon.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/wagon.jpg" class="fancybox" alt="Image" />
 			</div>	
 			
 			
 			<div class="thumbnail">
-				<img src="img/photography/objects/trees.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/trees.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/photography/objects/teddy.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/teddy.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/taxi.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/taxi.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/spraycan.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/spraycan.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/shoes2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/shoes2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/trespassing2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/trespassing2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/pink.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/pink.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/ropelight.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/ropelight.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/lightpost.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/lightpost.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/lightbulb.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/lightbulb.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/lantern.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/lantern.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/redshoes.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/redshoes.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/jeans.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/jeans.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/trespassing.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/trespassing.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/rockingchairs.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/rockingchairs.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail">
-				<img src="img/photography/objects/graffbench.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/graffbench.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/graff4.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/graff4.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/futon2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/futon2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/ego.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/ego.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/doubleshroom.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/doubleshroom.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/cup.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/cup.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/buoy2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/buoy2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/boots.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/boots.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/blunyenx.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/blunyenx.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/bins.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/bins.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/bike.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/bike.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/behappy.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/behappy.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail2">
-				<img src="img/photography/objects/woodplanks.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/woodplanks.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/trunk.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/trunk.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/meterbox.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/meterbox.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/chimney.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/chimney.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/vino.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/vino.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			
 			<div class="thumbnail2">
-				<img src="img/photography/objects/rockingchair.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/rockingchair.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/3mujeres.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/3mujeres.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail2">
-				<img src="img/photography/objects/fashion.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/fashion.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/dump.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/dump.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/buoy.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/buoy.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail2">
-				<img src="img/photography/objects/pole4.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/pole4.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/muhammadali.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/muhammadali.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/mosh.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/mosh.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/breast.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/breast.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/prom.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/prom.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail">
-				<img src="img/photography/objects/mossbark.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/mossbark.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/crimescene.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/crimescene.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/crimescene2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/crimescene2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/crimescene3.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/crimescene3.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/hydrant.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/hydrant.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/grafftunnel.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/grafftunnel.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail">
-				<img src="img/photography/objects/graffittitunnel2.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/graffittitunnel2.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/vibes.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/vibes.jpg" class="fancybox" alt="Image" />
 			</div>
 			<div class="thumbnail">
-				<img src="img/photography/objects/acorns.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/acorns.jpg" class="fancybox" alt="Image" />
 			</div>			
 			<div class="thumbnail">
-				<img src="img/photography/objects/hats.jpg" class="fancybox"alt="Image" />
+				<img src="img/photography/objects/hats.jpg" class="fancybox" alt="Image" />
 			</div>
 					
 			

@@ -1,7 +1,6 @@
 <html>
 
 	<head>
-	
 		<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		
@@ -21,73 +20,19 @@
 		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<script type="text/javascript" src="http://www.queness.com/js/bsa.js?t=123322"></script>
+		<script src="js/jquery.1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
-		
-
-		<!-- Responsive Nav -->
-		<script src="js/jquery.1.7.1.min.js"></script>
-		<script>
-			$(function() {
-				var pull = $('#pull');
-				var	menu = $('nav ul');
-
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				
-				$(window).resize(function(){
-					var w = $(this).width();
-
-					if(w > 800 && menu.is(':hidden')) {
-						menu.removeAttr('style');
-					}
-				});
-
-				$('li').on('click', function(e) {		
-					var w = $(window).width();
-					if(w < 800 ) {
-						menu.slideToggle();
-					}
-				});
-
-				$('.panel').height($(window).height());
-				
-			});
-		</script>
-			<!-- FANCYBOX IMAGES -->
-		<script type="text/javascript">
-				$(function($){
-					var addToAll = false;
-					var gallery = true;
-					var titlePosition = 'inside';
-					$(addToAll ? 'img' : 'img.fancybox').each(function(){
-						var $this = $(this);
-						var title = $this.attr('title');
-						var src = $this.attr('data-big') || $this.attr('src');
-						var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-						$this.wrap(a);
-					});
-					if (gallery)
-						$('a.fancybox').attr('rel', 'fancyboxgallery');
-					$('a.fancybox').fancybox({
-						titlePosition: titlePosition
-					});
-				});
-				$.noConflict();
-		</script>
 	</head>
 
-
 	<body>
-
 		<nav class="clearfix">
 		    <ul class="clearfix">
 		        
 		        <li><a href="http://www.thelynconcept.com/enter"><font color="bad433">&Xi;&ensp;</font color>Home</a></li>
-				
+					
 				<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Design</p>
 					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/logos">Logos</a></ul>
 					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/print">Print</a></ul>
@@ -116,50 +61,48 @@
 		    </a>
 		</nav>
 
-
 		<div class="absolute"> <img class="absolute" src="img/design/logo/lhhwhite.png"/> </div>
 		<div class="footer"> <p class="footer"> ©<br>Lyn<br>Harris<br>2016</p> </div>
 			
 			<div align="center">
-						
-				<div class="thumbnail">
-					<img src="img/illustration/comics/sketch001-01.jpg" class="fancybox"alt="Image" />
+					<div class="thumbnail">
+					<img src="img/illustration/comics/sketch001-01.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-01.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-01.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-02.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-02.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-03.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-03.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-04.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-04.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-05.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-05.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-06.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-06.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-07.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-07.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-09.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-09.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-10.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-10.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-11.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-11.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail">
-					<img src="img/illustration/shoes/shoes-12.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-12.jpg" class="fancybox" alt="Image" />
 				</div>
 				<div class="thumbnail2">
-					<img src="img/illustration/shoes/shoes-16.jpg" class="fancybox"alt="Image" />
+					<img src="img/illustration/shoes/shoes-16.jpg" class="fancybox" alt="Image" />
 				</div>
 			</div>
 	</body>

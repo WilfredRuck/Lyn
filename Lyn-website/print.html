@@ -22,6 +22,9 @@
 		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<script type="text/javascript" src="http://www.queness.com/js/bsa.js?t=123322"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
 		
 
 		<!-- Responsive Nav -->
@@ -54,6 +57,27 @@
 				$('.panel').height($(window).height());
 				
 			});
+		</script>
+			<!-- FANCYBOX IMAGES -->
+		<script type="text/javascript">
+			$(function($){
+				var addToAll = false;
+				var gallery = true;
+				var titlePosition = 'inside';
+				$(addToAll ? 'img' : 'img.fancybox').each(function(){
+					var $this = $(this);
+					var title = $this.attr('title');
+					var src = $this.attr('data-big') || $this.attr('src');
+					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+					$this.wrap(a);
+				});
+				if (gallery)
+					$('a.fancybox').attr('rel', 'fancyboxgallery');
+				$('a.fancybox').fancybox({
+					titlePosition: titlePosition
+				});
+			});
+			$.noConflict();
 		</script>
 	</head>
 
@@ -98,111 +122,92 @@
 		
 		<div align="center">
 					
-			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
-			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
-			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
-						
-			<script type="text/javascript">
-			$(function($){
-				var addToAll = false;
-				var gallery = true;
-				var titlePosition = 'inside';
-				$(addToAll ? 'img' : 'img.fancybox').each(function(){
-					var $this = $(this);
-					var title = $this.attr('title');
-					var src = $this.attr('data-big') || $this.attr('src');
-					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-					$this.wrap(a);
-				});
-				if (gallery)
-					$('a.fancybox').attr('rel', 'fancyboxgallery');
-				$('a.fancybox').fancybox({
-					titlePosition: titlePosition
-				});
-			});
-			$.noConflict();
-			</script>
-			
-			
 			<div class="thumbnail2">
-				<a href="https://issuu.com/ouzimag/docs/ouzi_issue_1_2017"target="_blank"> <img "fancybox" src="img/design/print/tag3.jpg"> </a>
+				<a href="https://issuu.com/ouzimag/docs/ouzi_issue_1_2017" target="_blank"> <img class="fancybox" src="img/design/print/tag3.jpg"> </a>
 			</div>
 			
 			<div class="thumbnail2">
-				<a href="https://issuu.com/thelynconcept/docs/juice"target="_blank"> <img "fancybox" src="img/design/print/tag.jpg"> </a>
+				<a href="https://issuu.com/thelynconcept/docs/juice" target="_blank"> <img class="fancybox" src="img/design/print/tag.jpg"> </a>
 			</div>
 			
 			<div class="thumbnail2">
-				<a href="https://issuu.com/thelynconcept/docs/coffee_and_conversations"target="_blank"> <img "fancybox" src="img/design/print/tag2.jpg"> </a>
+				<a href="https://issuu.com/thelynconcept/docs/coffee_and_conversations" target="_blank"> <img class="fancybox" src="img/design/print/tag2.jpg"> </a>
 			</div>
 
 			<div class="thumbnail">
-				<img src="img/design/print/fhync1.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail2">
-				<img src="img/design/print/fhync2.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail2">
-				<img src="img/design/print/fhync3.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail2">
-				<img src="img/design/print/fhync4.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail">
-				<img src="img/design/print/fhync5.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail">
-				<img src="img/design/print/fhync6.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail">
-				<img src="img/design/print/fhync7.jpg" class="fancybox"alt="Image" />
-			</div>
-			<div class="thumbnail">
-				<img src="img/design/print/fhync8.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/print/fhync1.jpg" class="fancybox" alt="Image" />
 			</div>
 
 			<div class="thumbnail2">
-				<img src="img/design/print/tough.jpg" class="fancybox"alt="Tough" />
-			</div>
-			
-			<div class="thumbnail">
-				<img src="img/design/print/olive.jpg" class="fancybox"alt="Olive" />
-			</div>
-
-			<div class="thumbnail">
-				<img src="img/design/print/rhinoceros.jpg" class="fancybox"alt="Rhinoceros" />
-			</div>
-			
-			<div class="thumbnail">
-				<img src="img/design/print/history.jpg" class="fancybox"alt="History" />
-			</div>
-			
-			<div class="thumbnail2">
-				<img src="img/design/print/hypersexual.jpg" class="fancybox"alt="Hypersexual" />
-			</div>
-			
-			<div class="thumbnail2">
-				<img src="img/design/print/offer.jpg" class="fancybox"alt="Offer" />
-			</div>
-			
-			<div class="thumbnail2">
-				<img src="img/design/print/beauty.jpg" class="fancybox"alt="Beauty" />
-			</div>
-			
-			<div class="thumbnail">
-				<img src="img/design/print/hair.jpg" class="fancybox"alt="Hair" />
-			</div>
-			
-			<div class="thumbnail">
-				<img src="img/design/print/stereotypes.jpg" class="fancybox"alt="Stereotypes" />
-			</div>
-			
-			<div class="thumbnail">
-				<img src="img/design/print/youth.jpg" class="fancybox"alt="Youth" />
+				<img src="img/design/print/fhync2.jpg" class="fancybox" alt="Image" />
 			</div>
 
 			<div class="thumbnail2">
-				<img src="img/design/print/x-magazine.jpg" class="fancybox"alt="X Magazine Cover" />
+				<img src="img/design/print/fhync3.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail2">
+				<img src="img/design/print/fhync4.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/fhync5.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/fhync6.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/fhync7.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/fhync8.jpg" class="fancybox" alt="Image" />
+			</div>
+
+			<div class="thumbnail2">
+				<img src="img/design/print/tough.jpg" class="fancybox" alt="Tough" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/olive.jpg" class="fancybox" alt="Olive" />
+			</div>
+
+			<div class="thumbnail">
+				<img src="img/design/print/rhinoceros.jpg" class="fancybox" alt="Rhinoceros" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/history.jpg" class="fancybox" alt="History" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/hypersexual.jpg" class="fancybox" alt="Hypersexual" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/offer.jpg" class="fancybox" alt="Offer" />
+			</div>
+			
+			<div class="thumbnail2">
+				<img src="img/design/print/beauty.jpg" class="fancybox" alt="Beauty" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/hair.jpg" class="fancybox" alt="Hair" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/stereotypes.jpg" class="fancybox" alt="Stereotypes" />
+			</div>
+			
+			<div class="thumbnail">
+				<img src="img/design/print/youth.jpg" class="fancybox" alt="Youth" />
+			</div>
+
+			<div class="thumbnail2">
+				<img src="img/design/print/x-magazine.jpg" class="fancybox" alt="X Magazine Cover" />
 			</div>	
 		</div>
 	</body>

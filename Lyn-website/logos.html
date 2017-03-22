@@ -22,221 +22,164 @@
 		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<script type="text/javascript" src="http://www.queness.com/js/bsa.js?t=123322"></script>
-		
-
-		<!-- Responsive Nav -->
 		<script src="js/jquery.1.7.1.min.js"></script>
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-						menu 		= $('nav ul');
-
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				
-				$(window).resize(function(){
-					var w = $(this).width();
-
-					if(w > 800 && menu.is(':hidden')) {
-						menu.removeAttr('style');
-					}
-				});
-
-				$('li').on('click', function(e) {				
-					var w = $(window).width();
-					if(w < 800 ) {
-						menu.slideToggle();
-					}
-				});
-
-				$('.panel').height($(window).height());
-				
-			});
-		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
 	</head>
 
+	<body>
 
-<body>
-
-<nav class="clearfix">
-    <ul class="clearfix">
-        
-        <li><a href="http://www.thelynconcept.com/enter"><font color="bad433">&Xi;&ensp;</font color>Home</a></li>
-		
-		<li class="dropdown"><p class="active"><font color="bad433">&Xi;&ensp;</font color>Design</p>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/logos">Logos</a></ul>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/print">Print</a></ul>
-		</li>
-		
+		<nav class="clearfix">
+		    <ul class="clearfix">
+		        
+		        <li><a href="http://www.thelynconcept.com/enter"><font color="bad433">&Xi;&ensp;</font color>Home</a></li>
 				
-		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Photography</p>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/humans">Humans</a></ul>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/objects">Objects</a></ul>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/insandouts">Ins & Outs</a></ul>
-		</li>
-		
-		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Illustration</p>
-			<ul class="dropdown-content"><a href="http://www.thelynconcept.com/illustration">Comics & Shoes</a></ul>
-		</li>
+				<li class="dropdown"><p class="active"><font color="bad433">&Xi;&ensp;</font color>Design</p>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/logos">Logos</a></ul>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/print">Print</a></ul>
+				</li>
+				
+						
+				<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Photography</p>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/humans">Humans</a></ul>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/objects">Objects</a></ul>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/insandouts">Ins & Outs</a></ul>
+				</li>
+				
+				<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Illustration</p>
+					<ul class="dropdown-content"><a href="http://www.thelynconcept.com/illustration">Comics & Shoes</a></ul>
+				</li>
 
-		<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Social Media</p>
-			<ul class="dropdown-content"><a href="https://www.instagram.com/thelynconcept/" target="_blank">Instagram</a></ul>
-			<ul class="dropdown-content"><a href="http://thelynconcept.tumblr.com/" target="_blank">Tumblr</a></ul>
-			<ul class="dropdown-content"><a href="https://www.pinterest.com/thelynconcept/" target="_blank">Pinterest</a></ul>
-			<ul class="dropdown-content"><a href="mailto:lyn.harrish@gmail.com">Lyn.Harrish@gmail.com </a></ul>
-		</li>
+				<li class="dropdown"><p><font color="bad433">&Xi;&ensp;</font color>Social Media</p>
+					<ul class="dropdown-content"><a href="https://www.instagram.com/thelynconcept/" target="_blank">Instagram</a></ul>
+					<ul class="dropdown-content"><a href="http://thelynconcept.tumblr.com/" target="_blank">Tumblr</a></ul>
+					<ul class="dropdown-content"><a href="https://www.pinterest.com/thelynconcept/" target="_blank">Pinterest</a></ul>
+					<ul class="dropdown-content"><a href="mailto:lyn.harrish@gmail.com">Lyn.Harrish@gmail.com </a></ul>
+				</li>
 
-    </ul>
-    <a href="#" id="pull"><font color="ffffff">&Xi;&ensp;</font color>Menu</a>
-</nav>
+		    </ul>
+		    <a href="#" id="pull"><font color="ffffff">&Xi;&ensp;</font color>Menu</a>
+		</nav>
 
 
-<div class="absolute"> <img class="absolute" src="img/design/logo/lhhwhite.png"/> </div>
-<div class="footer"> <p class="footer">©<br>Lyn<br>Harris<br>2016</p> </div>
+		<div class="absolute"> <img class="absolute" src="img/design/logo/lhhwhite.png"/> </div>
+		<div class="footer"> <p class="footer">©<br>Lyn<br>Harris<br>2016</p> </div>
 		
 		<div align="center">
 					
-			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
-			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
-			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"> </script>
-						
-			<script type="text/javascript">
-			$(function($){
-				var addToAll = false;
-				var gallery = true;
-				var titlePosition = 'inside';
-				$(addToAll ? 'img' : 'img.fancybox').each(function(){
-					var $this = $(this);
-					var title = $this.attr('title');
-					var src = $this.attr('data-big') || $this.attr('src');
-					var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-					$this.wrap(a);
-				});
-				if (gallery)
-					$('a.fancybox').attr('rel', 'fancyboxgallery');
-				$('a.fancybox').fancybox({
-					titlePosition: titlePosition
-				});
-			});
-			$.noConflict();
-			</script>
-			
-			
-			
 			<div class="thumbnail">
-				<img src="img/design/logo/ganbei.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/ganbei.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/lhh.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/lhh.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/itsmycall.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/itsmycall.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/lemonrose.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/lemonrose.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/happymike.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/happymike.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/cornerstone.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/cornerstone.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/aliyahhakimel.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/aliyahhakimel.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/bls.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/bls.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/lomeroots.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/lomeroots.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/coba.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/coba.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/cinnamoncafe.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/cinnamoncafe.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/110thstreet.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/110thstreet.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/sledge.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/sledge.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/olah.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/olah.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/raleigh.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/raleigh.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/fhnyc.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/fhnyc.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/glass.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/glass.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/beltline.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/beltline.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/hrhat.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/hrhat.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/sociallydetermined.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/sociallydetermined.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/yevvisao.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/yevvisao.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/sendit.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/sendit.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/pique.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/pique.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/littletillers.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/littletillers.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/rqtek.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/rqtek.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/aurebelle.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/aurebelle.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/flfc.jpg" class="fancybox"alt="Image" />
+				<img src="img/design/logo/flfc.jpg" class="fancybox" alt="Image" />
 			</div>
 			
 			<div class="thumbnail">
-				<img src="img/design/logo/urbansankofa.jpg" class="fancybox"alt="Image" />
-			</div>
-			
+				<img src="img/design/logo/urbansankofa.jpg" class="fancybox" alt="Image" />
+			</div>	
 		</div>
 	</body>
 </html>
