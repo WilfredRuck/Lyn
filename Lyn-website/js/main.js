@@ -1,3 +1,12 @@
+// $(document).ready(function() {
+
+//   $('.dropdown-content').click( function() { 
+//     $(`.dropdown-content`).css("background-color", "red");
+//   });
+
+// })
+
+
 $(function() {
 	var pull = $('#pull');
 	var	menu = $('nav ul');
