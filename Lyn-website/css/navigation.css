@@ -65,6 +65,11 @@ a{
 
 
 /* Navigation Style */
+
+li {
+	list-style-type: none;
+}
+
 .codrops-top{
 	font-family: 'Raleway', sans-serif;
 	font-size: 10px;
