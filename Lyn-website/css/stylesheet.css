@@ -1,4 +1,4 @@
-.dropdown {
+/*.dropdown {
 	position: relative;
 	display: inline-block;
 }
@@ -13,7 +13,7 @@
 
 .dropdown:hover .dropdown-content {
 	display: block;
-}
+}*/
 
 nav {
 	height: 40px;
@@ -32,10 +32,11 @@ nav {
 	margin-bottom: 7%;
 }
 
-nav a:hover {
-		background:#bad433;
-		color: #fff;
-	} 
+li a:hover {
+	background-color:#bad433;
+	color: black;
+	display: inline-block;
+} 
 
 nav ul {
 	padding: 0;
@@ -73,15 +74,13 @@ p.active{
 	letter-spacing: 15px;
 }
 
-
-
 /* ==========================================================================
 Responsive
 ========================================================================== */
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1566px) {
 
 	nav {
 		width: 100%;
@@ -112,7 +111,7 @@ Responsive
 	}
 	
 	li a:hover {
-		background:#bad433;
+		background-color:#bad433;
 		color: #fff;
 	}  	
 	
@@ -142,7 +141,6 @@ Responsive
 		color: #bad433;
 		letter-spacing: 4px;
 	}
-	
 }
 
 
