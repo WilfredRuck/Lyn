@@ -175,6 +175,7 @@ p.footer {
 	line-height: 5px;
 	font-size: 3px;
 }
+
 img.absolute {
     width: 20px;
 }
@@ -183,7 +184,7 @@ img.absolute {
 div.portfolio {
 	padding: 7%;
 	padding-top:10%;
-	}	
+}	
 
 p.body {
 	letter-spacing: 2px;
@@ -241,7 +242,6 @@ p.body {
           transform: translate(-50%,-50%);
 }
 
-
 .thumbnail2 {
 	position: relative;
 	width: 300px;
@@ -263,7 +263,6 @@ p.body {
           transform: translate(-50%,-50%);
 }
 
-
 .thumbnail3 {
 	position: relative;
 	width: 300px;
@@ -274,6 +273,7 @@ p.body {
 	display: inline-block;
 
 }
+
 .thumbnail3 img {
   position: absolute;
   left: 50%;
