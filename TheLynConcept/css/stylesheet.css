@@ -1,0 +1,1079 @@
+
+/* ==========================================================================
+	Divs
+========================================================================== */
+	
+	
+	.outer
+	{
+		display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+
+	.middle
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.inner
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+	;
+	}
+	
+	
+/* ==========================================================================
+	Main
+========================================================================== */	
+
+
+
+	::-webkit-scrollbar
+	{
+		display: none;
+	}
+
+	body {
+		background-color: #000;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		color: #fff;
+		text-align: center;
+	}
+
+	h1
+	{
+		font-size: 1em;
+		text-transform: capitalize;
+		padding-bottom: 40px;
+	}
+
+
+/* ==========================================================================
+	Corners
+========================================================================== */	
+
+
+
+	p.footer
+	{
+		text-align: left;
+		letter-spacing: 2px;
+		line-height: 1.4em;
+		font-size: .5em;
+		margin: 20px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 20;
+	}
+
+	img.logo
+	{
+		text-align: right;
+		width: 40px;
+		margin: 20px;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 20;
+	}
+
+	.right-icon
+	{
+		text-align: left;
+		letter-spacing: 2px;
+		line-height: 1.4em;\
+		margin: 20px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 20;
+		font-size: 3em;
+		color: #fff;
+	}
+
+	.left-icon
+	{
+		text-align: left;
+		letter-spacing: 2px;
+		line-height: 1.4em;
+		margin-top: 20px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		font-size: 2.5em;
+		color: #fff;
+	}
+
+
+
+
+
+/* ==========================================================================
+	Social Media Icons
+========================================================================== */	
+
+
+	
+
+	/* Wrapper */
+	
+	.icon-button
+	{
+		background-color: white;
+		border-radius: 10px;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 3rem;
+		height: 6rem;
+		line-height: 6rem;
+		margin: 0 20px;
+		position: relative;
+		text-align: center;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: 6rem;
+		margin-top: 50px;
+	}
+
+	/* Circle */
+	
+	.icon-button span
+	{
+		border-radius: 0;
+		display: block;
+		height: 0;
+		left: 50%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		width: 0;
+	}
+	
+	
+	.icon-button:hover span
+	{
+		width: 6rem;
+		height: 6rem;
+		border-radius: 10px;
+		margin: -2.9rem;
+	}
+
+	/* Icons */
+	
+	.icon-button i
+	{
+		background: none;
+		color: white;
+		height: 6rem;
+		left: 0;
+		line-height: 6rem;
+		position: absolute;
+		top: 0;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		width: 6rem;
+		z-index: 10;
+		border: 2px solid #fff;
+		border-radius: 10px;
+	}
+
+
+
+/* ==========================================================================
+	Instagram
+========================================================================== */
+
+	.instagram
+	{
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.instagram span
+	{
+		background-color:#bad433;
+	}
+
+	.icon-button:hover .icon-instagram
+	{
+		color: #000;
+	}
+	
+	
+
+/* ==========================================================================
+	Behance
+========================================================================== */
+
+	.behance {
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.behance span{
+		background-color: #bad433;
+	}
+
+	.icon-button:hover .icon-behance
+	{
+		color: white;
+	}
+
+	
+	
+/* ==========================================================================
+	Tumblr
+========================================================================== */
+
+	.tumblr {
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.tumblr span{
+		background-color: #bad433;
+	}
+
+	.icon-button:hover .icon-tumblr
+	{
+		color: white;
+	}
+
+	
+
+/* ==========================================================================
+	Pinterest
+========================================================================== */
+
+
+	.pinterest {
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.pinterest span{
+		background-color: #bad433;
+	}
+
+	.icon-button:hover .icon-pinterest
+	{
+		color: white;
+	}
+
+
+	
+/* ==========================================================================
+	Invest
+========================================================================== */
+
+
+	.usd {
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.usd span{
+		background-color: #bad433;
+	}
+
+	.icon-button:hover .icon-usd
+	{
+		color: white;
+	}
+
+	
+
+/* ==========================================================================
+	Email
+========================================================================== */
+
+
+	.envelope-o {
+		background-color: #000;
+	}
+
+	/*HOVER*/
+
+	.envelope-o span{
+		background-color: #bad433;
+	}
+
+	
+	.icon-button:hover .icon-envelope-o
+	{
+		color: white;
+	}
+
+
+
+
+
+	@media all and (max-width: 680px) 
+	{
+		.icon-button 
+		{
+			border-radius: 8rem;
+			font-size: 4rem;
+			height: 8rem;
+			line-height: 8rem;
+			width: 8rem;
+			margin-top: 50px;
+		}
+
+		
+		.icon-button:hover span 
+		{
+			width: 8rem;
+			height: 8rem;
+			border-radius: 1rem;
+			margin: -4rem;
+		}
+
+		
+		/* Icons */
+		.icon-button i 
+		{
+			height: 8rem;
+			line-height: 8rem;
+			width: 8rem;
+		}
+
+	}
+	
+	
+	
+	
+/* ==========================================================================
+	Circle Left Menu
+========================================================================== */
+
+
+	/* Resets */
+	body, ul 
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Decor */
+
+	#boom
+	{
+		font-size: 3em;
+		cursor:context-menu;
+	}
+	
+	
+	#other
+	{
+		font-size: .4em;
+	}
+
+	.drawer 
+	{
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		height: 0;
+		background: none;
+		color: white;
+		text-align: center;
+		padding-top: 20px;
+		/* Remove 4px gap between <li> */
+	}
+
+
+	.drawer li 
+	{
+		pointer-events: none;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		list-style: none;
+		line-height: 100%;
+		transform: translateZ(0);
+	}
+
+
+	.drawer a 
+	{
+		pointer-events: auto;
+		position: relative;
+		display: block;
+		padding: 0 20px;
+		/* Reset font-size */
+		text-decoration: none;
+		color: white;
+		transition: background 0.3s;
+	}
+
+
+	.drawer a:active, .drawer a:focus 
+	{
+		background: #000;
+	}
+
+
+	.drawer i 
+	{
+		display: block;
+		margin-bottom: .2em;
+		font-size: 2em;
+	}
+
+
+	.drawer span 
+	{
+		font-size: .625em;
+		font-family: sans-serif;
+		text-transform: uppercase;
+	}
+
+
+	.drawer li:hover ul 
+	{
+		/* Open the fly-out menu */
+		transform: translateX(0);
+		background: #000;
+		/* Enable this if you wish to replicate hoverIntent */
+	}
+
+
+	.drawer > li 
+	{
+		display: block;
+		/* Add a shadow to the top-level link */
+		/* Show the shadow when the link is hovered over */
+		/* Fly out menus */
+	}
+
+
+	.drawer > li > a 
+	{
+		background: #000;
+	}
+
+
+	.drawer > li:hover 
+	{
+		z-index: 100;
+		color: #bad433;
+	}
+
+
+	.drawer > li:hover a 
+	{
+		background: #000;
+	}
+
+
+	.drawer > li a:hover 
+	{
+		background: #000;
+		color: #bad433;
+	}
+
+
+	.drawer > li > a:after 
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		width: 4px;
+		opacity: 0;
+	}
+
+
+	.drawer > li:hover a:after 
+	{
+		opacity: 1;
+	}
+
+
+	.drawer > li ul 
+	{
+		position: absolute;
+		/* Stack below the top level */
+		z-index: -1;
+		top: 0;
+		left: 100%;
+		height: 100%;
+		width: auto;
+		white-space: nowrap;
+		/* Close the menus */
+		transform: translateX(-100%);
+		background: none;
+		transition: 2s transform;
+		padding-right: 80px;
+	}
+
+
+
+/* ==========================================================================
+	Triabgle Right Menu
+========================================================================== */
+
+	#boom2
+	{
+		font-size: 3.4em;
+		cursor:context-menu;
+	}
+
+
+	.drawer2
+	{
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		right: 0;
+		height: 0;
+		background: none;
+		color: white;
+		text-align: center;
+		padding-top: 20px;
+		/* Remove 4px gap between <li> */
+	}
+	
+	
+	.drawer2 li 
+	{
+		pointer-events: none;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		list-style: none;
+		line-height: 100%;
+		transform: translateZ(0);
+	}
+	
+	
+	.drawer2 a 
+	{
+		pointer-events: auto;
+		position: relative;
+		display: block;
+		padding: 0 20px;
+		/* Reset font-size */
+		text-decoration: none;
+		color: white;
+		transition: background 0.3s;
+	}
+	
+	
+	.drawer2 a:active, .drawer a:focus 
+	{
+		background: #000;
+	}
+	
+	
+	.drawer2 i 
+	{
+		display: block;
+		margin-bottom: .2em;
+		font-size: 2em;
+	}
+	
+	
+	.drawer2 span 
+	{
+		font-size: .6em;
+		font-family: 'Raleway', sans-serif;		
+		text-transform: uppercase;
+	}
+	
+	.drawer2 li:hover ul 
+	{
+		/* Open the fly-out menu */
+		transform: translateX(0);
+		background: #000;
+		/* Enable this if you wish to replicate hoverIntent */
+	}
+	
+	
+	.drawer2 > li 
+	{
+		display: block;
+		/* Add a shadow to the top-level link */
+		/* Show the shadow when the link is hovered over */
+		/* Fly out menus */
+	}
+	
+	
+	.drawer2 > li > a 
+	{
+		background: #000;
+	}
+	
+	
+	.drawer2 > li:hover 
+	{
+		z-index: 100;
+		color: #bad433;
+	}
+	
+	
+	.drawer2 > li:hover a 
+	{
+		background: #000;
+	}
+	
+	
+	.drawer2 > li a:hover 
+	{
+		background: #000;
+		color: #bad433;
+	}
+	
+	
+	.drawer2 > li > a:after 
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 100%;
+		width: 4px;
+		opacity: 0;
+	}
+	
+	
+	.drawer2 > li:hover a:after 
+	{
+		opacity: 1;
+	}
+	
+	
+	.drawer2 > li ul 
+	{
+		position: absolute;
+		/* Stack below the top level */
+		z-index: -1;
+		top: 0;
+		right: 100%;
+		height: 100%;
+		width: auto;
+		white-space: nowrap;
+		/* Close the menus */
+		transform: translateX(100%);
+		background: none;
+		transition: 2s transform;
+		padding-left: 80px;
+	}
+
+
+
+/*=============================================================================
+	Modal
+=============================================================================*/		
+	
+	.myImg /* Style the Image Used to Trigger the Modal */
+	{
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	
+	.myImg:hover
+	{
+		opacity: 0.7;
+	}
+	
+	
+	.modal /* The Modal (background) */
+	{
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 25; /* Sit on top */
+		padding-top: 2em; /* Location of the box */
+		padding-bottom: 2em; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+	
+	
+	.modal-content /* Modal Content (Image) */
+	{
+		margin: auto;
+		display: block;
+		width: 80%;
+		height: auto;
+		z-index: 25;
+	}
+	
+	
+	#caption /* Caption of Modal Image (Image Text) - Same Width as the Image */
+	{
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #fff;
+		padding: 10% 0;
+		padding-top: 20px;
+		text-transform: capitalize;
+		z-index: 25;
+	}
+	
+	
+	.modal-content, #caption /* Add Animation - Zoom in the Modal */
+	{
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+	
+
+	@-webkit-keyframes zoom 
+	{
+		from {-webkit-transform:scale(0)}
+		to {-webkit-transform:scale(1)}
+	}
+
+	
+	@keyframes zoom 
+	{
+		from {transform:scale(0)}
+		to {transform:scale(1)}
+	}
+
+
+
+/* ==========================================================================
+	Close Button
+========================================================================== */
+
+	.close
+	{
+		position: fixed;
+		top: 0;
+		right: 5%;
+		color: #bad433;
+		font-size: 10vh;
+		font-weight: bold;
+		transition: 0.3s;
+		width: 10%;
+		height: 100%;
+		text-align: center;
+		z-index: 20;
+	}
+
+	
+	.close:hover, .close:focus
+	{
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+	.close2
+	{
+		position: fixed;
+		top: 0;
+		right: 0;
+		color: #f1f1f1;
+		font-size: 10vh;
+		font-weight: bold;
+		transition: 0.3s;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		z-index: -2;
+	}
+	
+
+	.close2:hover, .close2:focus
+	{
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	
+	@media only screen and (max-width: 700px) /* 100% Image Width on Smaller Screens */
+	{
+		.modal-content
+		{
+			width: 100%;
+		}
+	}
+
+
+
+/* ==========================================================================
+	Filter
+========================================================================== */
+
+	.filter
+	{
+		background-color: none;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	
+	.filter ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	
+	.filter ul li
+	{
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 0;
+		letter-spacing: .2em;
+		font-size: 3em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		color: #fff;
+		font-weight: 500;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	
+	.filter ul li a
+	{
+		font-family: 'Raleway', sans-serif;
+		padding-left: 1vh;
+		text-decoration: none;
+		color: #bad433;
+		text-align: justify;
+	}
+
+	  
+	  
+/* ==========================================================================
+	Gallery
+========================================================================== */	  
+	  
+	.sets
+	{ 
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
+		-webkit-column-gap: 10px;
+		-moz-column-gap: 10px;
+		column-gap: 10px;
+		margin-top: 10px;
+		overflow: hidden;
+		margin: 0 8%;
+	}  	  
+	  
+	  
+	.sets img
+	{
+		width:100%;
+		height:auto;
+		float:center;
+		transition: 2s;
+		margin-bottom: 10px;
+		page-break-inside: avoid; /* For Firefox. */
+		-webkit-column-break-inside: avoid; /* For Chrome & friends. */
+		break-inside: avoid; /* For standard browsers like IE. :-) */
+	}
+	
+	
+	.sets a
+	{
+		width:100%;
+		transition:all 0.2s;
+		display:block;
+		float:left;
+		opacity:1;
+		height:auto;
+	}
+	
+	@media screen and (max-width:950px)
+	{
+		.drawer
+		{ 
+			display: none;
+		}
+
+		
+		.drawer2
+		{ 
+			display: none;
+		}
+
+		
+		.filter
+		{ 
+			font-size: 2vh;
+		}
+
+		
+		.sets
+		{ 
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			margin-left: 1em;
+			margin-right: 1em;
+		}		
+		
+	}
+	
+	@media screen and (min-width:951px)
+	{		
+		nav
+		{
+			display: none;
+		}
+				
+				
+		#add-even-padding
+		{
+			padding: 4em 0em 4em;
+		}			
+	}
+	
+	@media screen and (max-width: 767px)
+	{		
+		.sets 
+		{ 
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+	}
+	
+	@media screen and (max-width: 479px)
+	{
+		.sets
+		{ 
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+	}
+	
+	
+	
+/* ==========================================================================
+	After Opened
+========================================================================== */	
+	
+	.sets .hide
+	{
+		width:0%;
+		opacity:0;
+		transition:all 2s;
+		float:center;
+	}
+	
+
+
+/* ==========================================================================
+	Menu
+========================================================================== */
+   
+	nav
+	{
+		background-color: none;
+		top:0;
+		left:0;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	
+	nav ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: left;		
+	}
+
+	
+	nav ul li
+	{
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 0;
+		letter-spacing: .2em;
+		font-size: .8em;
+		padding-top: 5em;
+		padding-bottom: 2em;
+		color: #fff;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	
+	nav ul li a
+	{
+		font-family: 'Raleway', sans-serif;
+		padding: 1em 1em;
+		text-decoration: none;
+		color: #fff;
+		text-align: center;		
+	}
+
+	
+	#responsive-nav 
+	{
+		cursor: pointer;
+		color: #000;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 600;
+		padding: 1.5em 0;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		background-color: #bad433;
+		text-decoration: none;
+		text-align: center;
+	}
+
+
+
+/* ==========================================================================
+	Padding
+========================================================================== */   
+	
+	#add-even-padding
+	{
+		padding: 4em 0em;
+	}		
