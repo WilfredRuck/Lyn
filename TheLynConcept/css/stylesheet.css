@@ -4,27 +4,21 @@
 ========================================================================== */
 	
 	
-	.outer
-	{
-		display: table;
-		position: absolute;
-		height: 100%;
-		width: 100%;
-	}
 
 	.middle
 	{
 		display: table-cell;
 		vertical-align: middle;
 	}
+	
 
 	.inner
 	{
 		margin-left: auto;
 		margin-right: auto;
 		width:100%;
-	;
 	}
+	
 	
 	
 /* ==========================================================================
@@ -37,14 +31,25 @@
 	{
 		display: none;
 	}
+	
 
-	body {
+	body
+	{
 		background-color: #000;
 		font-family: 'Raleway', sans-serif;
 		font-size: 1em;
 		color: #fff;
 		text-align: center;
+		margin: 0;
 	}
+	
+	
+	html, body
+	{
+	  width: 100%;
+	  height: 100%;
+	}
+
 
 	h1
 	{
@@ -73,6 +78,7 @@
 		z-index: 20;
 	}
 
+	
 	img.logo
 	{
 		text-align: right;
@@ -83,6 +89,7 @@
 		right: 0;
 		z-index: 20;
 	}
+	
 
 	.right-icon
 	{
@@ -97,6 +104,7 @@
 		font-size: 3em;
 		color: #fff;
 	}
+	
 
 	.left-icon
 	{
@@ -111,8 +119,6 @@
 		font-size: 2.5em;
 		color: #fff;
 	}
-
-
 
 
 
@@ -199,6 +205,8 @@
 	Instagram
 ========================================================================== */
 
+
+
 	.instagram
 	{
 		background-color: #000;
@@ -211,6 +219,7 @@
 		background-color:#bad433;
 	}
 
+	
 	.icon-button:hover .icon-instagram
 	{
 		color: #000;
@@ -222,16 +231,21 @@
 	Behance
 ========================================================================== */
 
-	.behance {
+
+
+	.behance
+	{
 		background-color: #000;
 	}
 
 	/*HOVER*/
 
-	.behance span{
+	.behance span
+	{
 		background-color: #bad433;
 	}
 
+	
 	.icon-button:hover .icon-behance
 	{
 		color: white;
@@ -243,16 +257,21 @@
 	Tumblr
 ========================================================================== */
 
-	.tumblr {
+
+
+	.tumblr
+	{
 		background-color: #000;
 	}
 
 	/*HOVER*/
 
-	.tumblr span{
+	.tumblr span
+	{
 		background-color: #bad433;
 	}
 
+	
 	.icon-button:hover .icon-tumblr
 	{
 		color: white;
@@ -265,16 +284,20 @@
 ========================================================================== */
 
 
-	.pinterest {
+
+	.pinterest
+	{
 		background-color: #000;
 	}
 
 	/*HOVER*/
 
-	.pinterest span{
+	.pinterest span
+	{
 		background-color: #bad433;
 	}
 
+	
 	.icon-button:hover .icon-pinterest
 	{
 		color: white;
@@ -287,16 +310,19 @@
 ========================================================================== */
 
 
-	.usd {
+	.usd
+	{
 		background-color: #000;
 	}
 
 	/*HOVER*/
 
-	.usd span{
+	.usd span
+	{
 		background-color: #bad433;
 	}
 
+	
 	.icon-button:hover .icon-usd
 	{
 		color: white;
@@ -309,13 +335,16 @@
 ========================================================================== */
 
 
-	.envelope-o {
+
+	.envelope-o
+	{
 		background-color: #000;
 	}
 
 	/*HOVER*/
 
-	.envelope-o span{
+	.envelope-o span
+	{
 		background-color: #bad433;
 	}
 
@@ -324,9 +353,6 @@
 	{
 		color: white;
 	}
-
-
-
 
 
 	@media all and (max-width: 680px) 
@@ -362,329 +388,6 @@
 	}
 	
 	
-	
-	
-/* ==========================================================================
-	Circle Left Menu
-========================================================================== */
-
-
-	/* Resets */
-	body, ul 
-	{
-		margin: 0;
-		padding: 0;
-	}
-
-	/* Decor */
-
-	#boom
-	{
-		font-size: 3em;
-		cursor:context-menu;
-	}
-	
-	
-	#other
-	{
-		font-size: .4em;
-	}
-
-	.drawer 
-	{
-		position: fixed;
-		z-index: 10;
-		top: 0;
-		left: 0;
-		height: 0;
-		background: none;
-		color: white;
-		text-align: center;
-		padding-top: 20px;
-		/* Remove 4px gap between <li> */
-	}
-
-
-	.drawer li 
-	{
-		pointer-events: none;
-		position: relative;
-		display: inline-block;
-		vertical-align: middle;
-		list-style: none;
-		line-height: 100%;
-		transform: translateZ(0);
-	}
-
-
-	.drawer a 
-	{
-		pointer-events: auto;
-		position: relative;
-		display: block;
-		padding: 0 20px;
-		/* Reset font-size */
-		text-decoration: none;
-		color: white;
-		transition: background 0.3s;
-	}
-
-
-	.drawer a:active, .drawer a:focus 
-	{
-		background: #000;
-	}
-
-
-	.drawer i 
-	{
-		display: block;
-		margin-bottom: .2em;
-		font-size: 2em;
-	}
-
-
-	.drawer span 
-	{
-		font-size: .625em;
-		font-family: sans-serif;
-		text-transform: uppercase;
-	}
-
-
-	.drawer li:hover ul 
-	{
-		/* Open the fly-out menu */
-		transform: translateX(0);
-		background: #000;
-		/* Enable this if you wish to replicate hoverIntent */
-	}
-
-
-	.drawer > li 
-	{
-		display: block;
-		/* Add a shadow to the top-level link */
-		/* Show the shadow when the link is hovered over */
-		/* Fly out menus */
-	}
-
-
-	.drawer > li > a 
-	{
-		background: #000;
-	}
-
-
-	.drawer > li:hover 
-	{
-		z-index: 100;
-		color: #bad433;
-	}
-
-
-	.drawer > li:hover a 
-	{
-		background: #000;
-	}
-
-
-	.drawer > li a:hover 
-	{
-		background: #000;
-		color: #bad433;
-	}
-
-
-	.drawer > li > a:after 
-	{
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 100%;
-		width: 4px;
-		opacity: 0;
-	}
-
-
-	.drawer > li:hover a:after 
-	{
-		opacity: 1;
-	}
-
-
-	.drawer > li ul 
-	{
-		position: absolute;
-		/* Stack below the top level */
-		z-index: -1;
-		top: 0;
-		left: 100%;
-		height: 100%;
-		width: auto;
-		white-space: nowrap;
-		/* Close the menus */
-		transform: translateX(-100%);
-		background: none;
-		transition: 2s transform;
-		padding-right: 80px;
-	}
-
-
-
-/* ==========================================================================
-	Triabgle Right Menu
-========================================================================== */
-
-	#boom2
-	{
-		font-size: 3.4em;
-		cursor:context-menu;
-	}
-
-
-	.drawer2
-	{
-		position: fixed;
-		z-index: 10;
-		top: 0;
-		right: 0;
-		height: 0;
-		background: none;
-		color: white;
-		text-align: center;
-		padding-top: 20px;
-		/* Remove 4px gap between <li> */
-	}
-	
-	
-	.drawer2 li 
-	{
-		pointer-events: none;
-		position: relative;
-		display: inline-block;
-		vertical-align: middle;
-		list-style: none;
-		line-height: 100%;
-		transform: translateZ(0);
-	}
-	
-	
-	.drawer2 a 
-	{
-		pointer-events: auto;
-		position: relative;
-		display: block;
-		padding: 0 20px;
-		/* Reset font-size */
-		text-decoration: none;
-		color: white;
-		transition: background 0.3s;
-	}
-	
-	
-	.drawer2 a:active, .drawer a:focus 
-	{
-		background: #000;
-	}
-	
-	
-	.drawer2 i 
-	{
-		display: block;
-		margin-bottom: .2em;
-		font-size: 2em;
-	}
-	
-	
-	.drawer2 span 
-	{
-		font-size: .6em;
-		font-family: 'Raleway', sans-serif;		
-		text-transform: uppercase;
-	}
-	
-	.drawer2 li:hover ul 
-	{
-		/* Open the fly-out menu */
-		transform: translateX(0);
-		background: #000;
-		/* Enable this if you wish to replicate hoverIntent */
-	}
-	
-	
-	.drawer2 > li 
-	{
-		display: block;
-		/* Add a shadow to the top-level link */
-		/* Show the shadow when the link is hovered over */
-		/* Fly out menus */
-	}
-	
-	
-	.drawer2 > li > a 
-	{
-		background: #000;
-	}
-	
-	
-	.drawer2 > li:hover 
-	{
-		z-index: 100;
-		color: #bad433;
-	}
-	
-	
-	.drawer2 > li:hover a 
-	{
-		background: #000;
-	}
-	
-	
-	.drawer2 > li a:hover 
-	{
-		background: #000;
-		color: #bad433;
-	}
-	
-	
-	.drawer2 > li > a:after 
-	{
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 100%;
-		width: 4px;
-		opacity: 0;
-	}
-	
-	
-	.drawer2 > li:hover a:after 
-	{
-		opacity: 1;
-	}
-	
-	
-	.drawer2 > li ul 
-	{
-		position: absolute;
-		/* Stack below the top level */
-		z-index: -1;
-		top: 0;
-		right: 100%;
-		height: 100%;
-		width: auto;
-		white-space: nowrap;
-		/* Close the menus */
-		transform: translateX(100%);
-		background: none;
-		transition: 2s transform;
-		padding-left: 80px;
-	}
-
-
 
 /*=============================================================================
 	Modal
@@ -836,6 +539,8 @@
 	Filter
 ========================================================================== */
 
+
+
 	.filter
 	{
 		background-color: none;
@@ -857,26 +562,34 @@
 	.filter ul li
 	{
 		display: inline-block;
-		text-transform: uppercase;
 		margin: 0;
-		letter-spacing: .2em;
-		font-size: 3em;
-		padding-top: 1em;
+		padding-top: 6em;
 		padding-bottom: 1em;
 		color: #fff;
-		font-weight: 500;
 		text-decoration: none;
 		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		font-size: 13px;
+		font-weight: 500;
 	}
 
 	
 	.filter ul li a
 	{
-		font-family: 'Raleway', sans-serif;
-		padding-left: 1vh;
+		padding-left: 1em;
+		padding-right: 1em;
+		color: #fff;
 		text-decoration: none;
-		color: #bad433;
 		text-align: justify;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	
+	.filter ul li a:hover
+	{
+		font-weight: 900;
+		color: #bad433;
 	}
 
 	  
@@ -884,6 +597,8 @@
 /* ==========================================================================
 	Gallery
 ========================================================================== */	  
+	  
+	  
 	  
 	.sets
 	{ 
@@ -922,25 +637,46 @@
 		height:auto;
 	}
 	
+	
+	
+/* ==========================================================================
+	Mobile Media Screen
+========================================================================== */
+
+
+
 	@media screen and (max-width:950px)
-	{
-		.drawer
+	{		
+		nav-circle, nav-circle a, #nav-circle-toggle, #nav-circle-toggle:after, #nav-circle-toggle:focus, .nav-circle-open nav-circle a, 
+		.nav-circle-open #nav-circle-toggle, .nav-circle-open #nav-circle-toggle:after, nav-square, nav-square a, #nav-square-toggle, #nav-square-toggle:after, #nav-square-toggle:focus, .nav-square-open nav-square a,
+		.nav-square-open #nav-square-toggle, .nav-square-open #nav-square-toggle:after, div-circle, div-square
 		{ 
 			display: none;
 		}
-
 		
-		.drawer2
-		{ 
-			display: none;
-		}
-
 		
+				
 		.filter
 		{ 
 			font-size: 2vh;
 		}
-
+		
+		
+		.filter ul li
+		{
+			display: inline-block;
+			margin: 0;
+			padding-top: 6em;
+			padding-bottom: 1em;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			font-size: 13px;
+			font-weight: 500;
+		}
+		
 		
 		.sets
 		{ 
@@ -953,9 +689,17 @@
 		
 	}
 	
+	
 	@media screen and (min-width:951px)
 	{		
 		nav
+		{
+			display: none;
+		}
+		
+		
+		.grinding, .overlay, .overlay-content, .overlay a, .overlay a:hover, 
+		.overlay a:focus, .overlay .closebtn
 		{
 			display: none;
 		}
@@ -966,6 +710,7 @@
 			padding: 4em 0em 4em;
 		}			
 	}
+	
 	
 	@media screen and (max-width: 767px)
 	{		
@@ -979,6 +724,7 @@
 		}
 	}
 	
+	
 	@media screen and (max-width: 479px)
 	{
 		.sets
@@ -987,6 +733,21 @@
 			-moz-column-count: 1;
 			column-count: 1;
 		}
+		
+		.filter ul li
+		{
+			display: block;
+			margin: 0;
+			padding-top: 2em;
+			padding-bottom: 0em;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			font-size: 13px;
+			font-weight: 500;
+		}
 	}
 	
 	
@@ -994,6 +755,8 @@
 /* ==========================================================================
 	After Opened
 ========================================================================== */	
+	
+	
 	
 	.sets .hide
 	{
@@ -1006,9 +769,99 @@
 
 
 /* ==========================================================================
-	Menu
+	Mobile Nav Menu
 ========================================================================== */
    
+   
+   
+   .grinding 
+	{
+		width: 100%;
+		cursor: pointer;
+		color: #000;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 600;
+		padding: 1.5em 0;
+		font-size: 2em;
+		text-transform: uppercase;
+		background-color: #bad433;
+		text-decoration: none;
+		text-align: center;
+		top:0;
+	}
+
+	
+	.overlay
+	{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+	}
+	
+
+	.overlay-content
+	{
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	
+	.overlay a
+	{
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		text-transform: uppercase;
+	}
+	
+
+	.overlay a:hover, .overlay a:focus
+	{
+		color: #bad433;
+	}
+	
+
+	.overlay .closebtn
+	{
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
+	
+	@media screen and (max-height: 450px)
+	{
+	  .overlay {overflow-y: auto;}
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	nav
 	{
 		background-color: none;
@@ -1024,7 +877,8 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		text-align: left;		
+		text-align: left;
+		background-color: #000;		
 	}
 
 	
@@ -1035,11 +889,11 @@
 		margin: 0;
 		letter-spacing: .2em;
 		font-size: .8em;
-		padding-top: 5em;
+		padding-top: 4em;
 		padding-bottom: 2em;
 		color: #fff;
 		font-weight: 500;
-		text-align: center;
+		text-align: center;		
 	}
 
 	
@@ -1049,7 +903,7 @@
 		padding: 1em 1em;
 		text-decoration: none;
 		color: #fff;
-		text-align: center;		
+		text-align: center;
 	}
 
 	
@@ -1073,7 +927,303 @@
 	Padding
 ========================================================================== */   
 	
+	
+	
 	#add-even-padding
 	{
 		padding: 4em 0em;
 	}		
+	
+	
+	
+/* ==========================================================================
+	Circle Nav Menu
+========================================================================== */   
+
+
+	
+	@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+	
+	
+	nav-circle
+	{
+		position: fixed;
+		top: 100px;
+		left: 0;
+		z-index: 20;
+	}
+	
+	
+	nav-circle a
+	{
+		
+		display: block;
+		color: #000;
+		padding-left: 20px;
+		line-height: 5px;
+		font-size: 13px;
+		letter-spacing: 0.2em;
+		margin-left: -500px;
+		height: 50px;
+		transition-property: margin-left;
+		transition-duration: 0.2s;
+		transition-timing-function: ease;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0.2em;
+		width: 300px;
+		text-align: left;
+		background-color: white;
+		opacity: .8;
+		padding-top: 20px;	
+		font-weight: 500;
+	}
+	
+	
+	nav-circle a:hover
+	{
+	  font-weight: 900;
+	}
+	
+	
+	nav-circle a:nth-child(1)
+	{
+		transition-delay: 0s;
+	}
+
+	
+	nav-circle a:nth-child(2)
+	{
+		transition-delay: 0.2s;
+	}
+	
+	
+	nav-circle a:nth-child(3)
+	{
+		transition-delay: 0.4s;
+	}
+
+	
+	nav-circle a:nth-child(4)
+	{
+		transition-delay: 0.6s;
+	}
+
+	
+	nav-circle a:nth-child(5)
+	{
+		transition-delay: 0.8s;
+	}
+	
+	
+	#nav-circle-toggle
+	{
+		width: 40px;
+		height: 40px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0);
+		font: inherit;
+		font-size: 40px;
+		color: #fff;
+		left: 0;
+		top: 0;
+		transition: -webkit-transform 0.2s ease;
+		transition: transform 0.2s ease;
+		transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+		padding: 0;
+		position: fixed;
+	}
+	#nav-circle-toggle:after
+	{
+		content: "\f1db";
+		font-family: "FontAwesome";
+		cursor: pointer;
+		position: fixed;
+	}
+	#nav-circle-toggle:focus {
+		outline: none;
+	}
+	#nav-circle-toggle:hover {
+		color: #bad433;
+	}
+	.nav-circle-open nav-circle a {
+		margin-left: 0;
+		padding-top: 20px;
+		width: 300px;
+		text-align: left;
+		background-color: white;
+		opacity: .8;
+	}
+	.nav-circle-open #nav-circle-toggle {
+		-webkit-transform: rotate(-0);
+			transform: rotate(-0);
+	}
+	.nav-circle-open #nav-circle-toggle:after {
+		content: "\f111";
+	}
+	/* Base Style */
+	* {
+		box-sizing: border-box;
+	}
+
+	
+		
+/* ==========================================================================
+	Square Nav Menu
+========================================================================== */ 	
+		
+	
+	
+	nav-square
+	{
+		position: fixed;
+		top: 100px;
+		right: 0;
+		z-index: 20;
+	}
+	
+	
+	nav-square a
+	{
+		display: block;
+		color: black;
+		padding-right: 20px;
+		line-height: 5px;
+		font-size: 13px;
+		letter-spacing: 0.2em;
+		margin-right: -500px;
+		height: 50px;
+		transition-property: margin-right;
+		transition-duration: 0.2s;
+		transition-timing-function: ease;
+		text-transform: uppercase;
+		text-decoration: none;
+		width: 300px;
+		text-align: right;
+		background-color: white;
+		opacity: .8;
+		padding-top: 20px;
+		font-weight: 500;
+	}
+	
+	
+	nav-square a:hover
+	{
+		font-weight: 900;
+	}
+
+	
+	nav-square a:nth-child(1)
+	{
+		transition-delay: 0s;
+	}
+
+	
+	nav-square a:nth-child(2)
+	{
+		transition-delay: 0.2s;
+	}
+
+	
+	nav-square a:nth-child(3)
+	{
+		transition-delay: 0.4s;
+	}
+
+	
+	nav-square a:nth-child(4)
+	{
+		transition-delay: 0.6s;
+	}
+	
+	
+	nav-square a:nth-child(5)
+	{
+		transition-delay: 0.8s;
+	}
+
+	
+	#nav-square-toggle
+	{
+		width: 40px;
+		height: 40px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0);
+		font: inherit;
+		font-size: 40px;
+		right: 0;
+		top: 0;
+		color: #fff;
+		transition: -webkit-transform 0.2s ease;
+		transition: transform 0.2s ease;
+		transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+		padding: 0;
+		position: fixed;
+	}
+	
+	
+	#nav-square-toggle:after
+	{
+		content: "\f096";
+		font-family: "FontAwesome";
+		cursor: pointer;
+		position: fixed;	  	  
+	}
+	
+	
+	#nav-square-toggle:focus
+	{
+		outline: none;
+	}
+	
+	
+	#nav-square-toggle:hover
+	{
+		color: #bad433;
+	}
+	
+	
+	.nav-square-open nav-square a
+	{
+		padding-top: 20px;
+		margin-right: 0;
+		width: 300px;
+		text-align: right;
+		background-color: white;
+		opacity: .8;
+	}
+	
+	
+	.nav-square-open #nav-square-toggle
+	{
+		-webkit-transform: rotate(-0);
+		transform: rotate(-0);
+	}
+	
+	
+	.nav-square-open #nav-square-toggle:after
+	{
+		content: "\f0c8";
+		position: fixed;
+	}
+	
+	
+	/* Base Style */
+	* {
+		box-sizing: border-box;
+	}	
+	
+	
+	div-circle
+	{
+		width: 50%;
+		float: left;
+	  
+	}
+	
+	
+	div-square
+	{
+		width: 50%;
+		float: right;
+	}
