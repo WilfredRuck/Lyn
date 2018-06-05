@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Magic Fingers Studio</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<!--favicon-->		
+
+		<link rel="icon" href="images/fav.png"/>
+
+		<!-- Responsive Nav -->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			$('nav').prepend('<div id="responsive-nav" style="display:none">Menu</div>');
+			$('#responsive-nav').on('click',function(){
+			$('nav ul').slideToggle()
+			});
+
+			$(window).resize(function(){
+
+			if ($(window).innerWidth() < 950) {
+			$('nav ul li').css('display','block');
+			$('nav ul').hide()
+			$('#responsive-nav').show()
+			} else {
+			$('nav ul li').css('display','inline-block');
+			$('nav ul').show()
+			$('#responsive-nav').hide()
+			}
+
+			});
+
+			$(window).resize();
+
+			});
+		</script>
+	</head>
+
+
+
+	<body class="color">
+
+		<!---------------------------------------
+			Logo
+		---------------------------------------->
+
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="logo">
+				<center>
+					<h1><a href="./index.html"><img class="logo" src="images/logo-black2.png" alt="" /></a></h1>
+				</center>
+				</div>
+			</div>
+		</div>
+				
+		<!---------------------------------------
+			Menu
+		---------------------------------------->
+
+		<nav>
+			<ul>
+				<li><a class="active a-unstyled" href="./index.html">Home</a></li>
+				<li><a class="a-unstyled" href="./services.html">Services</a></li>
+				<li><a class="a-unstyled" href="./pictures-videos.html">Gallery</a></li>
+				<li><a class="a-unstyled" href="https://www.eventbrite.com/o/magicfingers-studio-classes-11375416394" target="_blank">Events</a></li>
+				<li><a class="a-unstyled" href="https://magicfingersstudio.mykajabi.com/" target="_blank">Tutorials</a></li>
+				<li><a class="a-unstyled" href="./about.html">About Stasha</a></li>
+				<li><a class="a-unstyled" href="./contact-us.html">Contact</a></li>
+			</ul>
+		</nav>	
+
+		<!---------------------------------------
+		Video
+		---------------------------------------->
+			
+		<div id="wrapper-video">			  
+			<video class="mfs-video" autoplay loop>
+				<source src="video/halo.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<!---------------------------------------
+		Get The Look
+		---------------------------------------->
+
+		<div id="wrapper-white">
+			<div class="container-fluid" id="add-more-padding">
+				<center>
+					<div class="row">
+						<div class="col-12">
+							<h2 class="sub-title-red">Get The Look</h2>
+							<hr class="red">
+							<p class="stasha">Featured Hair Styles</p>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-4" id="col-pad">
+							  <img src="images/index/hue3.jpg" width="90%"/>
+							  <a href="./womens-braids.html">
+								  <button type="button" class="btn btn-lg btn-block" id="ButtonGTL">Stitch Braids</button>
+							  </a>	
+							</div>
+							
+							<div class="col-lg-4" id="col-pad">
+							  <img src="images/index/hue55.jpg" width="90%" />
+							  <a href="./womens-braids.html">
+								  <button type="button" class="btn btn-lg btn-block" id="ButtonGTL">Bantou Knots</button>
+							  </a>
+							</div>				
+							
+							<div class="col-lg-4" id="col-pad">
+							  <img src="images/index/hue000.jpg" width="90%" />
+							  <a href="./womens-braids.html">
+								  <button type="button" class="btn btn-lg btn-block" id="ButtonGTL">Halo Braid</button>
+							  </a>	
+							</div>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+
+		<!---------------------------------------
+		About Us
+		---------------------------------------->
+
+		<div id="wrapper-black-none">
+			<center>
+				<div class="container-fluid" id="add-more-padding">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="sub-title-white">About Magic Fingers Studio</h2>
+							<hr class="white">
+						</div>		
+					
+						<div class="row justify-content-md-center">
+							<p class="about-section">
+								We are a well versed hair salon that caters to Men, Women and Children. It is a friendly environment that helps service our clients with the best qualities 
+								needed. We accept cash payments daily, however we ONLY accept card payments Sunday through Thursday.
+							</p>
+						</div>
+					</div>
+				</div>
+			</center>
+		</div>
+
+		<!---------------------------------------
+		Explore
+		---------------------------------------->
+
+		<div id="wrapper-no-padding-white">
+
+			<div class="container-fluid" id="add-more-padding">
+				<center>
+					<div class="row">
+						<div class="col-12">
+							<h2 class="sub-title-red">Explore</h2>
+							<hr class="red">
+						</div>
+					</div>	
+
+					<div class="row">				
+						<div class="col-lg-4" id="col-button">
+						  <a href="./contact-us.html">
+						  <button id="Button-Explore"><Button-Title>Connect</Button-Title><br />
+							<Button-Text>Get social with<br />Magic Fingers Studio.</Button-Text>
+						  </button>
+						  </a>						  
+						</div>	
+						
+						<div class="col-lg-4" id="col-button">
+						  <a href="./locations.html">
+						  <button id="Button-Explore"><Button-Title>Book</Button-Title><br />
+							<Button-Text>Reserve an appointment<br />at Magic Fingers Studio.</Button-Text>
+						  </button>
+						  </a>						  
+						</div>				
+						
+						<div class="col-lg-4" id="col-button">
+						  <a href="./services.html">
+						  <button id="Button-Explore"><Button-Title>Services</Button-Title><br />
+							<Button-Text>Browse our various<br />hair style options.</Button-Text>
+						  </button>
+						  </a>						  
+						</div>						
+					</div>
+				</center>
+			</div>
+		</div>
+			
+		<!---------------------------------------
+		Copyright
+		---------------------------------------->
+
+		<div id="wrapper-black">
+			<center>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<p class="footer">
+								Copyright &copy; 2017. All rights reserved. | Site by <a class="a-footer" href="http://www.thelynconcept.com/" target="_blank">Lyn Harris</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</center>
+		</div>
+		
+	</body>
+</html>

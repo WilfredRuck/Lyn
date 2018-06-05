@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Locations | Magic Fingers Studio</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<!--favicon-->			
+
+		<link rel="icon" href="images/fav.png"/>
+
+		<!-- Responsive Nav -->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+
+			$('nav').prepend('<div id="responsive-nav" style="display:none">Menu</div>');
+			$('#responsive-nav').on('click',function(){
+			$('nav ul').slideToggle()
+			});
+
+			$(window).resize(function(){
+
+			if ($(window).innerWidth() < 950) {
+			$('nav ul li').css('display','block');
+			$('nav ul').hide()
+			$('#responsive-nav').show()
+			} else {
+			$('nav ul li').css('display','inline-block');
+			$('nav ul').show()
+			$('#responsive-nav').hide()
+			}
+
+			});
+
+			$(window).resize();
+
+			});
+		</script>
+
+	</head>
+
+	<body class="color">
+
+		<!---------------------------------------
+			Logo
+		---------------------------------------->
+
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="logo">
+				<center>
+					<h1><a href="./index.html"><img class="logo" src="images/logo-black2.png" alt="" /></a></h1>
+				</center>
+				</div>
+			</div>
+		</div>
+
+		<!---------------------------------------
+			Menu
+		---------------------------------------->	
+			
+		<nav>
+			<ul>
+				<li><a class="active a-unstyled" href="./index.html">Home</a></li>
+				<li><a class="a-unstyled" href="./services.html">Services</a></li>
+				<li><a class="a-unstyled" href="./gallery.html">Gallery</a></li>
+				<li><a class="a-unstyled" href="https://www.eventbrite.com/o/magicfingers-studio-classes-11375416394">Events</a></li>
+				<li><a class="a-unstyled" href="https://magicfingersstudio.mykajabi.com/">Tutorials</a></li>
+				<li><a class="a-unstyled" href="./about.html">About Stasha</a></li>
+				<li><a class="a-unstyled" href="./contact-us.html">Contact</a></li>
+			</ul>
+		</nav>		
+
+		<!---------------------------------------
+		Video
+		---------------------------------------->
+			
+		<div id="wrapper-video">			  
+					
+			<video class="mfs-video" autoplay loop>
+				<source src="video/bantu2.mp4" type="video/mp4">
+			</video>
+			
+		</div>
+			
+		<!---------------------------------------
+			Page Title
+		---------------------------------------->
+
+		<div id="wrapper-no-padding-white">		
+			<div class="container-fluid" id="add-more-padding">	
+				<div class="row">
+					<div class="col-12">	
+
+						<center><h2 class="sub-title-red">locations</h2>
+						<hr class="red">	
+						<p class="Page-Caption">Magic Fingers Studio has 2 locations available to our amazing customers.</p>
+
+					</div>
+				</div>		
+			</div>
+		</div>	
+			
+		<!---------------------------------------
+			Studio 1
+		---------------------------------------->
+				
+		<div id="wrapper-no-padding-black">		
+			<div class="container-fluid" id="add-even-padding">
+				<center class="whiteText">	
+					<div class="row align-items-center">
+						
+						<div class="col-lg-8">									<!-- 	CONTAINS STUDIO 1 PHOTO FROM CSS FILE -->	
+							<div class="studio-1">
+							</div>	
+						</div>	
+						
+						<div class="col-lg-4" style="padding-top: 15px;">					
+							
+							<h2 class="sub-title-white">Studio 1</h2>
+							<hr class="white">
+							
+							<p class="reg">153 Euclid Avenue,<br />
+							Brooklyn, NY, 11208</p>
+							
+							<p><a class="link-directions" href="https://goo.gl/maps/fgeBxjYpBbA2" target="_blank">Get Directions</a></p>
+							
+							
+							<p style="padding-top: 15px; padding-bottom: 15px;">
+								Sunday | Closed <br />
+								Monday | 9:00 AM - 6:00 PM <br />
+								Tuesday | 9:00 AM - 6:00 PM <br />
+								Wednesday | 9:00 AM - 6:00 PM <br />
+								Thursday | 9:00 AM - 6:00 PM <br />
+								Friday | 9:00 AM - 7:00 PM <br />
+								Saturday | 9:00 AM - 7:00 PM
+							</p>
+							
+							<a href="https://www.vagaro.com/magicfingersstudio"><button id="Button-location"><div class="button-Text-2">Book Studio 1</div></button></a>
+								
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+			
+		<!---------------------------------------
+			Studio 2
+		---------------------------------------->
+				
+		<div id="wrapper-no-padding-white">		
+			<div class="container-fluid" id="add-even-padding">
+				<center class="blackText">		
+					<div class="row align-items-center" id="switch">
+					
+						<div class="col-lg-4" style="padding-top: 15px;">	
+
+							<h2 class="sub-title-red">Studio 2</h2>
+							<hr class="red">
+							<p><redtext>NOW OPEN</redtext>	</p>
+							<p class="reg">5319 Church Ave,<br /> 
+								Brooklyn, NY, 11203</p>
+							
+							<p><a class="link-directions" href="https://goo.gl/maps/h9i1zX2rPxt" target="_blank">Get Directions</a></p>
+							
+							
+							<p style="padding-top: 15px; padding-bottom: 15px;">
+							Sunday | 11:00 AM - 5:00 PM<br />
+							Monday | 9:00 AM - 8:00 PM<br />
+							Tuesday | 9:00 AM - 8:00 PM<br />
+							Wednesday | 9:00 AM - 8:00 PM<br />
+							Thursday | 9:00 AM - 8:00 PM<br />
+							Friday | 8:00 AM - 8:00 PM<br />
+							Saturday | 8:00 AM - 8:00 PM
+							</p>
+							
+							<a href="https://www.vagaro.com/magicfingersstudio2"><button id="Button-location"><div class="button-Text-2">Book Studio 2</div></button></a>
+									
+						</div>
+							
+							
+						<div class="col-lg-8">										<div class="studio-2">
+							</div>	
+						</div>	
+							
+					</div>
+				</center>
+			</div>
+		</div>
+			
+		<!---------------------------------------
+		Copyright
+		---------------------------------------->
+
+		<div id="wrapper-black">
+			<center>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+								
+							<p class="footer">
+							Copyright &copy; 2017. All rights reserved. | Site by <a class="a-footer" href="http://www.thelynconcept.com/" target="_blank">Lyn Harris</a>.
+							</p>
+									
+						</div>
+					</div>
+				</div>
+			</center>
+		</div>	
+		
+	</body>
+</html>

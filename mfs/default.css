@@ -1,0 +1,2092 @@
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+
+	@media screen and (max-width: 991px) {	
+
+		#switch
+		{
+			display: -webkit-flex; /* Safari */
+			-webkit-flex-direction: column-reverse;; /* Safari 6.1+ */
+			display: flex;
+			flex-direction: column-reverse;; 
+		}
+
+		#add-padding-x
+		{
+			padding: 0em 0em 0em;
+		}		
+		
+		h2.Image-Title
+		{
+			padding-top: 2em;
+			font-size: 1.5em;
+			font-family: 'Slabo', serif;
+			text-align: left;
+			margin-left: 40px;
+			margin-right: 40px;
+			color: #000;
+			-webkit-filter: invert(100%);
+			filter: invert(100%);
+		}
+		
+
+		img.logo
+		{
+			width: 100%;
+		}
+		
+		#add-even-padding{ padding: 2em 0em 0em; }
+		
+		
+
+	
+	}
+
+	
+	html, body
+	{
+		height: 100%;
+	}
+	
+	
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #fff;
+		font-family: 'Poppins', sans-serif;
+		font-size: .9em;
+		color: rgba(0,0,0,.6);
+	}
+	
+	
+	
+	body.color{
+		background: #fff;
+	}
+	
+	
+	
+	#white
+	{
+		color: #fff;		
+	}
+	
+	
+	
+	#whiteh2
+	{
+		color: #fff;
+		font-size: 2.8em;		
+		line-height: 150px;
+	}
+
+	
+	
+	h1, h2, h3
+	{
+		font-family: 'Slabo', serif;
+		line-height: 150px;
+		margin: 0;
+		padding: 0;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 2.8em;
+	}
+	
+	
+	
+	h4
+	{
+		font-family: 'Slabo', serif;
+		line-height: 100px;
+		margin: 0;
+		padding: 0;
+		font-weight: 200;
+		color: #404040;
+		text-transform: uppercase;
+	}
+	
+	
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;		
+	}
+	
+	p
+	{
+		font-family: 'Poppins', sans-serif;
+		line-height: 1.6em;
+		margin: 0;
+		padding: 0;
+		font-size: 1.3em;		
+	}
+	p.contact
+	{
+		font-family: 'Poppins', sans-serif;		
+		font-size: 1.1em;		
+		font-weight: 400;
+	}
+	
+	
+	
+	strong
+	{
+	}
+	
+	
+
+
+	.a-unstyled
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-unstyled:link
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-unstyled:visited
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-unstyled:hover
+	{
+		color: #000;
+		text-decoration: none;
+		transition: color 1s ease;
+	}
+	.a-unstyled:active
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	
+
+	.a-services-white
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-white:link
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-white:visited
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-white:hover
+	{
+		color: #E81123;
+		text-decoration: none;
+		opacity: .8;
+		transition: color 1s ease;
+	}
+	.a-services-white:active
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	
+	.a-services-black
+	{
+		color: #000;
+		text-decoration: none;
+	}
+	.a-services-black:link
+	{
+		color: #000;
+		text-decoration: none;
+	}
+	.a-services-black:visited
+	{
+		color: #000;
+		text-decoration: none;
+	}
+	.a-services-black:hover
+	{
+		color: #E81123;
+		text-decoration: none;
+		opacity: .8;
+		transition: color 1s ease;
+	}
+	.a-services-black:active
+	{
+		color: #000;
+		text-decoration: none;
+	}
+	
+	
+	.a-services-red
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-red:link
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-red:visited
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	.a-services-red:hover
+	{
+		color: #000;
+		text-decoration: none;
+		opacity: .8;
+		transition: color 1s ease;
+	}
+	.a-services-red:active
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	
+	.a-footer
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-footer:link
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-footer:visited
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	.a-footer:hover
+	{
+		color: #E81123;
+		text-decoration: none;
+		opacity: .8;
+		transition: color 1s ease;
+	}
+	.a-footer:active
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.a-gallery:hover
+	{
+		background-color: green;
+		color: black;
+		text-decoration: none;
+		transition: color 1s ease;
+	}
+
+/*=============================================================================
+	Wrappers
+=============================================================================*/
+
+
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		padding: 0em 0em 0em 0em;
+		background-color: #fff;
+	}
+
+
+	
+	#wrapper-video
+	{
+		overflow: hidden;
+		background: none;	
+		max-height: 35em;		
+	}
+
+	#wrapper-stasha
+	{
+    overflow: hidden;
+		background: none;	
+		max-height: 35em;
+	}
+
+
+	#wrapper-off-white
+	{
+		overflow: hidden;
+		background: #f7f0ed;
+		padding: 2em 0em 0em;
+	}
+	
+	
+	
+	#wrapper-white
+	{
+		overflow: hidden;
+		background: #fff;
+		padding: 2em 0em 0em;
+	}
+	
+	
+	
+	#wrapper-black
+	{
+		overflow: hidden;
+		background: #000;
+		padding: 2em 0em 0em;	
+	}
+	
+	
+	
+	#wrapper-red
+	{
+		overflow: hidden;
+		background: #E81123;
+		padding: 2em 0em 0em;	
+	}
+	
+	
+	
+	#wrapper-about
+	{
+		overflow: hidden;
+		background: #000;
+		padding: 10em 0em 10em;
+	}
+	
+	
+	
+	#wrapper-black-none
+	{
+		overflow: hidden;
+		background: #000;	
+		margin-bottom: 3em;
+		margin-top: 3em;
+	}
+	
+	
+	
+	#wrapper-white-none
+	{
+		overflow: hidden;
+		background: #fff;	
+		margin-bottom: 3em;
+		margin-top: 3em;
+	}
+	
+	
+	
+	#wrapper-off-white-none
+	{
+		overflow: hidden;
+		background: #f7f0ed;	
+		margin-bottom: 3em;
+		margin-top: 3em;
+	}
+	
+	
+	
+	#wrapper-no-padding
+	{
+		overflow: hidden;
+	}
+	
+	#wrapper-no-padding-gray
+	{
+		overflow: hidden;
+		background: #B2B2B2;
+		border: none;
+	}
+	
+	#wrapper-no-padding-red
+	{
+		overflow: hidden;
+		background: #E81123;
+		border: none;
+	}
+	
+	#wrapper-no-padding-black
+	{
+		overflow: hidden;
+		background: #000;
+		border: none;
+	}
+	
+	#wrapper-no-padding-gradient
+	{
+		overflow: hidden;
+		background: f7f0ed; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(#f7f0ed, #fff); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#f7f0ed, #fff); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#f7f0ed, #fff); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#f7f0ed, #fff); /* Standard syntax (must be last) */
+		border: none;
+	}
+	
+	#wrapper-no-padding-white
+	{
+		overflow: hidden;
+		background: #fff;
+		border: none;
+	}
+	
+	
+	#wrapper-no-padding-off-white
+	{
+		overflow: hidden;
+		background: #f7f0ed;
+		border: none;
+	}
+	
+	#wrapper-photo
+	{
+		overflow: hidden;
+		background: #000;
+		border: none;
+		max-height: 40em;
+	}
+	
+	
+	
+	.height
+	{
+		height: 30em;		
+	}
+
+
+	
+/* ==========================================================================
+   Social Icon Styles
+   ========================================================================== */
+
+
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 2em 0em 0em 0em;
+		list-style: none;
+		text-decoration: none;
+	}
+	
+	
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.10em;
+		font-size: 1em;
+		text-decoration: none;
+	}
+	
+	
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+	
+	
+	
+	ul.contact li a
+	{
+		color: #FFF;
+		text-decoration: none;
+	}
+	
+	
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	
+	
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+
+
+
+	#logo
+	{
+	}
+	
+	
+	
+	#logo h1
+	{
+		display: inline-block;
+		padding: 0.20em;
+		font-size: 3.5em;
+	}
+	
+	img.logo
+	{
+		width: 40%;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	
+	
+	#logo span
+	{
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: rgba(255,255,255,1);
+	}
+
+	
+	
+	#logo span a
+	{
+		color: rgba(255,255,255,0.8);
+		text-decoration: none;
+	}
+	
+	
+
+/* ==========================================================================
+   Menu
+========================================================================== */
+
+   .active
+   {
+		transition: color 1s ease;
+		
+		text-decoration: none;
+		color: #000;
+   }
+   
+	nav {
+		background-color: #E81123;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	nav ul
+	  {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0
+	  }
+
+	nav ul li
+	  {
+	  display: inline-block;
+	  text-transform: uppercase;
+	  padding: .5em 0;
+	  margin: 0;
+	  letter-spacing: .2em;
+	  font-size: 80%;
+	  padding-top: 1.5em;
+	  padding-bottom: 1.5em;
+	  color: #fff;
+	  font-weight: 500;
+	 text-decoration: none;
+	  }
+
+	nav ul li a
+	  {
+	  font-family: 'Poppins', sans-serif;
+	  padding: 1em 1em;
+	  text-decoration: none;
+	  color: #fff;
+	  }
+
+	#responsive-nav 
+	  {
+	  cursor: pointer;
+	  color: #fff;
+	  font-family: 'Poppins', sans-serif;
+	  font-weight: 600;
+	  padding: 2em 0;
+	  font-size: 1em;
+	  text-transform: uppercase;
+	  background-color: #E81123;
+	  text-decoration: none;
+	  }
+
+}============================================================
+   Button
+========================================================================== */	
+	
+	
+	
+	#ButtonCustom
+	{
+		Background-color: #E81123;
+		Border: none;
+		color: #f7f0ed;
+		width: 20em;
+		height: 10em;
+		border-radius: 0px 0px 0px 0px;
+		text-align: center;
+	}
+	
+	
+	
+	#ButtonGTL
+	{
+		Background-color: #E81123;
+		Border: none;
+		color: #fff;
+		width: 90%;
+		border-radius: 0px 0px 0px 0px;
+		text-align: center;
+		height: 5em;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		cursor: pointer;
+		
+	}
+	
+	
+	#Button-white
+	{
+		Background-color: #E81123;
+		Border: none;
+		color: #fff;
+		width: 90%;
+		border-radius: 0px 0px 0px 0px;
+		text-align: center;
+		height: 5em;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		cursor: pointer;
+		margin-bottom: 2em;
+		
+	}
+	
+	
+	#Button-Explore
+	{
+		border-color: #E81123;
+		Background-color: #fff;
+		width: 90%;
+		border-radius: 15px 15px 15px 15px;
+		text-align: center;
+		height: 8em;		
+		font-size: 1.3em;
+		cursor: pointer;
+		border-width: .5px;
+	}
+	
+	
+	
+	#Button-contact-us
+	{
+		border-color: none;
+		Background-color: #E81123;
+		width: 90%;
+		border-radius: 0 0 0 0;
+		text-align: center;
+		height: 5em;		
+		font-size: 1.3em;
+		cursor: pointer;
+		border: none;
+	}
+	
+	#Button-location
+	{
+		border-color: none;
+		Background-color: #E81123;
+		width: 90%;
+		border-radius: 0 0 0 0;
+		text-align: center;
+		height: 5em;		
+		font-size: 1.3em;
+		cursor: pointer;
+		border: none;
+	}
+	
+	#col-button
+	{
+		padding: 0em 0em 2em;
+	}
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+
+
+	#banner
+	{
+		overflow: hidden;
+		padding: 0 0em;
+		height: 735px;
+	}
+
+	
+	
+/* ==========================================================================
+   Padding
+   ========================================================================== */
+   
+   .col-height
+   {
+	   height: 20px;
+   }
+	
+	#no-padding
+	{
+		padding: 0;
+	}
+	no-padding
+	{
+		padding: 0;
+	}
+
+	#add-padding
+	{
+		padding: 2em 0em 0em;
+	}
+	
+	#add-padding-x
+	{
+		padding: 2em 0em 0em;
+	}
+	
+	
+	#add-padding-bottom
+	{
+		padding: 0em 0em 2em;
+	}
+	
+	#add-even-padding
+	{
+		padding: 2em 0em 2em;
+	}	
+	
+	#add-more-padding
+	{
+		padding: 5em 0em 5em;
+	}
+	
+	
+	
+	div.bottom
+	{
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		margin-bottom: none;
+    }
+
+
+	
+/* ==========================================================================
+	Header
+========================================================================== */
+	
+	
+
+	 header
+	 {
+		width: 100%;
+		padding:17em;
+		overflow: hidden;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+
+
+
+
+	
+
+/*=============================================================================
+	Text Align
+=============================================================================*/
+
+
+	
+	p.reg
+	{
+		padding-top: .5em;
+		font-size: 1.5em;
+		line-height: 1.5em;
+		text-transform: uppercase;
+	}
+	
+	p.cs
+	{
+		padding-top: .5em;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	
+	h2.pricetitle
+	{
+		padding-top: 2em;
+		font-size: 1.5em;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		font-family: 'Slabo', serif;
+		text-align: left;
+	}
+	
+	p.about-section
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+		color: #fff;
+		text-align: center;
+	}
+	
+	p.policies-section
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+		color: #000;
+		text-align: center;
+	}
+	
+	p.about-page
+	{
+		margin-left: 25%;
+		margin-right: 25%;
+		color: #000;
+		text-align: left;
+	}
+	
+	p.about-page2
+	{
+		margin-left: 25%;
+		margin-right: 25%;
+		color: #fff;
+		text-align: left;
+	}
+	
+	group{
+		position: absolute;
+		bottom: 0;
+	}
+	
+	h2.Image-Title
+	{
+		padding-top: 2em;
+		font-size: 1.5em;
+		font-family: 'Slabo', serif;
+		text-align: left;
+		margin-left: 40px;
+		margin-right: 40px;
+		color: #000;
+	}
+	
+	
+	p.Image-Caption
+	{
+		padding-top: .5em;
+		font-size: .8em;
+		font-family: 'Poppins', sans-serif;
+		text-align: left;	
+		margin-left: 40px;
+		margin-right: 40px;
+		padding-bottom: 3em;
+		color: #fff;
+	}
+	
+	
+	Button-Title
+	{
+		font-family: 'Slabo', serif;
+		font-size: 1.8em;
+		color: #000;
+	}
+	
+	
+	
+	Button-Text
+	{
+		font-family: 'Poppins', sans-serif;
+		font-size: .8em;
+		text-align: center;	
+		color: #000;		
+		font-weight: 500;
+	}
+
+	.button-Text {
+		font-family: 'Poppins', sans-serif;
+		font-size: .8em;
+		text-align: center;	
+		color: #000;		
+		font-weight: 500;
+	}
+	
+	Button-Text-2
+	{
+		font-family: 'Poppins', sans-serif;
+		font-size: 1em;
+		text-align: center;	
+		color: #fff;		
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.button-Text-2 {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1em;
+		text-align: center;	
+		color: #fff;		
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.indexStyle
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 3em;
+		line-height: auto;
+		color: #E81123;
+		text-align: center;
+	}
+	
+	.sub-title-black
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 3em;
+		line-height: auto;
+		color: #000;
+		text-align: center;
+	}
+	
+	.sub-title-red
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 3em;
+		line-height: auto;
+		color: #E81123;
+		text-align: center;
+	}
+	
+	.sub-sub-title-red
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 2em;
+		line-height: auto;
+		color: #E81123;
+	}
+	
+	.sub-sub-title-white
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 2em;
+		line-height: auto;
+		color: #fff;
+	}
+	
+	
+	.sub-sub-title-black
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 2em;
+		line-height: auto;
+		color: #000;
+	}
+
+	.sub-title-white
+	{
+		font-family: 'Slabo', serif;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 3em;
+		line-height: auto;
+		color: #fff;
+		text-align: center;
+	}
+	
+	
+	h2.Page-Title
+	{
+		padding-top: .5em;
+		font-size: 3em;
+		font-family: 'Slabo', serif;
+		text-align: center;	
+		padding-bottom: .5em;
+		color: #000;
+		color: #E81123;
+	}
+	
+	p.Page-Caption
+	{
+		padding-top: .5em;
+		font-size: 1.3em;
+		font-family: 'Poppins', sans-serif;
+		text-align: center;	
+		color: #000;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	p.pricecaption
+	{
+		padding-top: .5em;
+		font-size: .8em;
+		font-family: 'Poppins', sans-serif;
+		text-align: left;	
+		padding-left: 2em;
+	}
+	
+	p.note
+	{
+		padding-top: 1.5em;
+		font-size: .8em;
+		font-family: 'Poppins', sans-serif;
+		text-align: center;	
+		padding-bottom: .5em;
+		color: #000;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	#align-left
+	{
+		text-align: left;
+	}
+	
+	
+	
+	#align-right
+	{
+		text-align: right;
+	}
+	
+	
+	
+	paragraph
+	{		
+		padding: 3em 80em 2em;
+		line-height: 3em;
+	}
+	
+	
+	
+/*=============================================================================
+	Text Color
+=============================================================================*/	
+	
+	
+	
+	WhiteText
+	{
+		color:#fff
+	}
+
+	.whiteText {
+		color: #fff;
+	}
+	
+	
+	
+	OffWhiteText
+	{
+		color:#f7f0ed
+	}
+	
+	
+	
+	BlackText
+	{
+		color: #000;
+	}
+
+	.blackText {
+		color: #000;
+	}
+	
+	redText
+	{
+		color: #E81123;
+	}
+	
+	
+	Uppercase	
+	{
+		text-transform: uppercase;	
+		font-size: 1.3em;
+		line-height: 1.5em;
+	}
+
+	
+	
+/*=============================================================================
+	Text Styling
+=============================================================================*/
+	#col-pad
+	{
+		padding: 0em 0em 2em;
+	}	
+	
+	
+
+	#colheightcolor
+	{
+		height: 12em;
+		padding: 1em;		
+	}
+	
+	
+	
+	#colorings
+	{    
+		Text-align: left;
+		width: 20em;
+		height: 10em;
+	    background: #E81123;
+		padding: 0em 2em 2em;
+	}
+	
+	
+		
+	#colortitle
+	{
+		background-color: #fff;
+		font-family: 'Poppins', sans-serif;
+		Text-align: center;
+		height: 10em;
+	}
+		
+		
+		
+	p.stasha
+	{
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		padding: 0em 0em 2em;
+		font-weight: 700;
+		letter-spacing: .2em;
+	}
+		
+	
+	
+	p.footer
+	{
+		text-align: center;
+		color: #666;
+		font-family: 'Poppins', sans-serif;
+		font-size: .9em;
+	}
+	
+	
+	
+/*=============================================================================
+	Horizontal-Rule
+=============================================================================*/
+
+	
+	
+	hr.red-style
+	{ 
+		width: 25em;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #E81123;
+	}
+	
+	hr.black-style
+	{ 
+		width: 25em;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #000;
+	}
+	
+	hr.white-style
+	{ 
+		width: 25em;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #fff;
+	}
+	
+	hr.white
+	{ 
+		margin-left: 15%;
+		margin-right: 15%;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #fff;
+		margin-bottom: 3em;
+		margin-top: 2em;
+	}
+	
+	
+	hr.black
+	{ 
+		margin-left: 15%;
+		margin-right: 15%;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #000;
+		margin-bottom: 3em;
+		margin-top: 2em;
+	}
+	
+	
+	hr.red
+	{ 
+		margin-left: 15%;
+		margin-right: 15%;
+		height: 0em; 
+		border-top: 3px double;		
+		color: #E81123;
+		margin-bottom: 3em;
+		margin-top: 2em;
+	}
+	
+	hr.line
+	{ 
+		width: 50em;
+		height: 0em; 
+		border-top: 3px double;
+		padding: 1em 0em 2em;
+		color: #E81123;
+	}
+	
+
+/* ==========================================================================
+   Video Background
+   ========================================================================== */
+
+	
+	
+	.mfs-video{		
+		visibility: visible;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-bottom: -4%;		
+	}
+	
+	.mfs-image{		
+		visibility: visible;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-bottom: -4%;		
+	}
+			
+	
+	
+
+/*=============================================================================
+	Images
+=============================================================================*/
+
+		
+	.studio-1
+	{
+		background-image: url(images/womens-braids/ccc.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 50em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.studio-2
+	{
+		background-image: url(images/womens-braids/ee.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 50em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center;
+	}
+	
+	
+/*=============================================================================
+	Services Page
+=============================================================================*/
+	
+	.locs-main
+	{
+		background-image: url(images/locs/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 50em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.braids-main
+	{
+		background-image: url(images/womens-braids/ii.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 50em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.wash-main
+	{
+		background-image: url(images/wash-blow-dry/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 50em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+/*=============================================================================
+	Locs Page
+=============================================================================*/	
+	
+	
+	
+	.locs-a
+	{
+		background-image: url(images/locs/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.locs-b
+	{
+		background-image: url(images/locs/b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.locs-c
+	{
+		background-image: url(images/locs/c.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+
+	
+	
+
+	
+/*=============================================================================
+	Kids Braids Page
+=============================================================================*/		
+	.Kids-a
+	{
+		background-image: url(images/kids-braids/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	.Kids-b
+	{
+		background-image: url(images/kids-braids/b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: left; 
+	}
+	
+	
+	
+	.Kids-c
+	{
+		background-image: url(images/kids-braids/c.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	.Kids-d
+	{
+		background-image: url(images/kids-braids/d.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	
+	.Kids-e
+	{
+		background-image: url(images/kids-braids/e.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	.Kids-f
+	{
+		background-image: url(images/kids-braids/f.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+
+	
+	
+/*=============================================================================
+	Wash & Blow Dry Page
+=============================================================================*/			
+	
+	
+	
+	.wash-a
+	{
+		background-image: url(images/wash-blow-dry/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.wash-aa
+	{
+		background-image: url(images/wash-blow-dry/aa.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.wash-b
+	{
+		background-image: url(images/wash-blow-dry/b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+
+	
+	
+/*=============================================================================
+	Women's Braids Page
+=============================================================================*/		
+	
+	
+	
+	.style-a
+	{
+		background-image: url(images/womens-braids/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-aa
+	{
+		background-image: url(images/womens-braids/aa.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-aaa
+	{
+		background-image: url(images/womens-braids/aaa.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-b
+	{
+		background-image: url(images/womens-braids/b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-bb
+	{
+		background-image: url(images/womens-braids/bb.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-bbb
+	{
+		background-image: url(images/womens-braids/bbb.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-c
+	{
+		background-image: url(images/womens-braids/c.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-cc
+	{
+		background-image: url(images/womens-braids/cc.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-ccc
+	{
+		background-image: url(images/womens-braids/ccc.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-d
+	{
+		background-image: url(images/womens-braids/d.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-dd
+	{
+		background-image: url(images/womens-braids/dd.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-e
+	{
+		background-image: url(images/womens-braids/e.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-ee
+	{
+		background-image: url(images/womens-braids/ee.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	.style-f
+	{
+		background-image: url(images/womens-braids/f.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-ff
+	{
+		background-image: url(images/womens-braids/ff.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-fff
+	{
+		background-image: url(images/womens-braids/fff.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-g
+	{
+		background-image: url(images/womens-braids/g.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-gg
+	{
+		background-image: url(images/womens-braids/gg.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-ggg
+	{
+		background-image: url(images/womens-braids/ggg.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-h
+	{
+		background-image: url(images/womens-braids/h.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-hh
+	{
+		background-image: url(images/womens-braids/hh.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.style-i
+	{
+		background-image: url(images/womens-braids/i.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-ii
+	{
+		background-image: url(images/womens-braids/ii.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.style-j
+	{
+		background-image: url(images/womens-braids/j.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.style-jj
+	{
+		background-image: url(images/womens-braids/jj.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-k
+	{
+		background-image: url(images/womens-braids/k.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-l
+	{
+		background-image: url(images/womens-braids/l.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-m
+	{
+		background-image: url(images/womens-braids/m.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-n
+	{
+		background-image: url(images/womens-braids/n.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-nn
+	{
+		background-image: url(images/womens-braids/nn.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-nnn
+	{
+		background-image: url(images/womens-braids/nnn.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.style-o
+	{
+		background-image: url(images/womens-braids/o.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-oo
+	{
+		background-image: url(images/womens-braids/oo.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-ooo
+	{
+		background-image: url(images/womens-braids/ooo.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.style-p
+	{
+		background-image: url(images/womens-braids/p.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-pp
+	{
+		background-image: url(images/womens-braids/pp.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-ppp
+	{
+		background-image: url(images/womens-braids/ppp.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-q
+	{
+		background-image: url(images/womens-braids/q.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-qq
+	{
+		background-image: url(images/womens-braids/qq.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-r
+	{
+		background-image: url(images/womens-braids/r.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-s
+	{
+		background-image: url(images/womens-braids/s.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.style-t
+	{
+		background-image: url(images/womens-braids/t.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+/*=============================================================================
+	Mens Braids Page
+=============================================================================*/			
+	
+	
+	
+	.men-a
+	{
+		background-image: url(images/mens-braids/a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.men-b
+	{
+		background-image: url(images/mens-braids/b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.men-c
+	{
+		background-image: url(images/mens-braids/c.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.men-d
+	{
+		background-image: url(images/mens-braids/d.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	
+	.men-e
+	{
+		background-image: url(images/mens-braids/e.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	
+	.men-f
+	{
+		background-image: url(images/mens-braids/f.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	

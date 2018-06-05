@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Wash & Blow-Dry | Magic Fingers Studio</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+		<!--favicon-->				
+
+		<link rel="icon" href="images/fav.png"/>
+
+		<!-- Responsive Nav -->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+
+			$('nav').prepend('<div id="responsive-nav" style="display:none">Menu</div>');
+			$('#responsive-nav').on('click',function(){
+			$('nav ul').slideToggle()
+			});
+
+			$(window).resize(function(){
+
+			if ($(window).innerWidth() < 950) {
+			$('nav ul li').css('display','block');
+			$('nav ul').hide()
+			$('#responsive-nav').show()
+			} else {
+			$('nav ul li').css('display','inline-block');
+			$('nav ul').show()
+			$('#responsive-nav').hide()
+			}
+
+			});
+
+			$(window).resize();
+
+			});
+		</script>
+	
+	</head>
+
+
+
+	<body class="color">
+
+
+
+		<!---------------------------------------
+			Logo
+		---------------------------------------->
+
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="logo">
+				<center>
+					<h1><a href="./index.html"><img class="logo" src="images/logo-black2.png" alt="" /></a></h1>
+				</center>
+				</div>
+			</div>
+		</div>
+			
+		<!---------------------------------------
+			Menu
+		---------------------------------------->
+
+		<nav>
+			<ul>
+				<li><a class="active a-unstyled" href="./index.html">Home</a></li>
+				<li><a class="a-unstyled" href="./services.html">Services</a></li>
+				<li><a class="a-unstyled" href="./gallery.html">Gallery</a></li>
+				<li><a class="a-unstyled" href="https://www.eventbrite.com/o/magicfingers-studio-classes-11375416394">Events</a></li>
+				<li><a class="a-unstyled" href="https://magicfingersstudio.mykajabi.com/">Tutorials</a></li>
+				<li><a class="a-unstyled" href="./about.html">About Stasha</a></li>
+				<li><a class="a-unstyled" href="./contact-us.html">Contact</a></li>
+			</ul>
+		</nav>		
+
+		<!---------------------------------------
+		Video
+		---------------------------------------->
+			
+		<div id="wrapper-video">			  
+					
+			<video class="mfs-video" autoplay loop>
+				<source src="video/twist-out.mp4" type="video/mp4">
+			</video>
+			
+		</div>
+
+		<!---------------------------------------
+		Page Title
+		---------------------------------------->
+
+		<div id="wrapper-no-padding-white">
+			<div class="container-fluid" id="add-more-padding">		
+				<div class="row">
+				
+					<div class="col-lg-12">
+						<h2 class="sub-title-red">Wash & Blow Dry Style Gallery</h2>
+						<hr class="red">
+						<p class="Page-Caption">Hair shampoo and conditioned with natural products. 
+						Blown out to have hair manageable to be braided.
+						</p>
+					</div>
+
+				</div>			
+			</div>
+		</div>
+
+		<!---------------------------------------
+		Shampoo
+		---------------------------------------->	
+			
+			
+			
+		<div id="wrapper-no-padding-white">		
+			<div class="container-fluid" id="add-padding">	
+				<div class="row">				
+				
+					<div class="col-lg-4" id="col-pad">
+
+						<div class="wash-aa">
+							<group>
+							<h2 class="Image-Title"><br /></h2>
+							<p class="Image-Caption"></p>
+							</group>
+						</div>
+
+					</div>		
+					
+					<div class="col-lg-4" id="col-pad">								
+						<div class="wash-b">
+							<group>
+							<h2 class="Image-Title"><br /></h2>
+							<p class="Image-Caption"></p>
+							</group>
+						</div>
+
+					</div>			
+					
+					<div class="col-lg-4" id="col-pad">								
+						<div class="wash-a">
+							<group>
+							<h2 class="Image-Title"><br /></h2>
+							<p class="Image-Caption"></p>
+							</group>
+						</div>
+
+					</div>					
+				
+				</div>
+			</div>
+		</div>
+
+		<!---------------------------------------
+		Page Note
+		---------------------------------------->
+
+		<div id="wrapper-no-padding-white">
+			<div class="container-fluid">			
+				<div class="row">
+				
+					<div class="col-lg-12">					
+						<p class="note">* Prices and Duration are starting point quotes and they can change for many reasons.
+						</p>
+					</div>
+					
+				</div>			
+			</div>
+		</div>	
+			
+		<!---------------------------------------
+		Copyright
+		---------------------------------------->
+
+		<div id="wrapper-black">
+			<center>
+				<div class="container">
+					<div class="row">
+					
+						<div class="col-12">
+							<p class="footer">
+							Copyright &copy; 2017. All rights reserved. | Site by <a class="a-footer" href="http://www.thelynconcept.com/" target="_blank">Lyn Harris</a>.
+							</p>
+						</div>
+					 
+					</div>
+				</div>
+			</center>
+		</div>
+		
+	</body>
+</html>
