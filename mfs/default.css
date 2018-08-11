@@ -2090,3 +2090,276 @@
 		background-position: center; 
 	}
 	
+
+/*=============================================================================
+	Gallery Page
+=============================================================================*/		
+	
+	
+	
+	.gallery-a
+	{
+		background-image: url(images/gallery/1a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-aa
+	{
+		background-image: url(images/gallery/1b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-aaa
+	{
+		background-image: url(images/gallery/2a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-b
+	{
+		background-image: url(images/gallery/3a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-bb
+	{
+		background-image: url(images/gallery/3b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-bbb
+	{
+		background-image: url(images/gallery/3c.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-c
+	{
+		background-image: url(images/gallery/4b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-cc
+	{
+		background-image: url(images/gallery/5a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-ccc
+	{
+		background-image: url(images/gallery/5b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-d
+	{
+		background-image: url(images/gallery/6a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-dd
+	{
+		background-image: url(images/gallery/6b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.gallery-e
+	{
+		background-image: url(images/gallery/7a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.gallery-ee
+	{
+		background-image: url(images/gallery/7b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+
+	.gallery-f
+	{
+		background-image: url(images/gallery/8a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-ff
+	{
+		background-image: url(images/gallery/8b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-fff
+	{
+		background-image: url(images/gallery/9a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.gallery-g
+	{
+		background-image: url(images/gallery/9b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-gg
+	{
+		background-image: url(images/gallery/10a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-ggg
+	{
+		background-image: url(images/gallery/10b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	
+	.gallery-h
+	{
+		background-image: url(images/gallery/11a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.gallery-hh
+	{
+		background-image: url(images/gallery/11b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+
+
+/*=============================================================================
+	Videos Page
+=============================================================================*/		
+	
+	
+	
+	/*.videos-a
+	{
+		background-image: url(video/gallery/1a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.videos-aa
+	{
+		background-image: url(video/gallery/1b.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.videos-aaa
+	{
+		background-image: url(video/gallery/2a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.videos-b
+	{
+		background-image: url(video/gallery/3a.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center; 
+	}
+	.videos-bb
+
+	}*/
